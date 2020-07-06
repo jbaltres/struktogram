@@ -92,42 +92,42 @@ export const antwortenF1 = [
       Wert1: "+",
       Wert2: "-",
       Wert3: "0",
-      WertGruen: -1,
+      WertGruen: 1,
       WertRot: 0,
     },
     {
       Wert1: "+",
       Wert2: "0",
       Wert3: "-",
-      WertGruen: 0,
+      WertGruen: 1,
       WertRot: 1
     },
     {
       Wert1: "0",
       Wert2: "+",
       Wert3: "-",
-      WertGruen: 1,
+      WertGruen: 0,
       WertRot: 1
     },
     {
       Wert1: "-",
       Wert2: "+",
       Wert3: "0",
-      WertGruen: 1,
+      WertGruen: -1,
       WertRot: 0
     },
     {
       Wert1: "0",
       Wert2: "-",
       Wert3: "+",
-      WertGruen: -1,
+      WertGruen: 0,
       WertRot: -1
     },
     {
       Wert1: "-",
       Wert2: "0",
       Wert3: "+",
-      WertGruen: 0,
+      WertGruen: -1,
       WertRot: -1,
     }
   ];
@@ -137,42 +137,42 @@ export const antwortenF1 = [
       Wert1: "+",
       Wert2: "-",
       Wert3: "0",
-      WertGruen: -1,
+      WertGruen: 1,
       WertRot: 0,
     },
     {
       Wert1: "+",
       Wert2: "0",
       Wert3: "-",
-      WertGruen: 0,
+      WertGruen: 1,
       WertRot: 1
     },
     {
       Wert1: "0",
       Wert2: "+",
       Wert3: "-",
-      WertGruen: 1,
+      WertGruen: 0,
       WertRot: 1
     },
     {
       Wert1: "-",
       Wert2: "+",
       Wert3: "0",
-      WertGruen: 1,
+      WertGruen: -1,
       WertRot: 0
     },
     {
       Wert1: "0",
       Wert2: "-",
       Wert3: "+",
-      WertGruen: -1,
+      WertGruen: 0,
       WertRot: -1
     },
     {
       Wert1: "-",
       Wert2: "0",
       Wert3: "+",
-      WertGruen: 0,
+      WertGruen: -1,
       WertRot: -1,
     }
   ];
@@ -182,42 +182,42 @@ export const antwortenF1 = [
       Wert1: "+",
       Wert2: "-",
       Wert3: "0",
-      WertGruen: -1,
+      WertGruen: 1,
       WertRot: 0,
     },
     {
       Wert1: "+",
       Wert2: "0",
       Wert3: "-",
-      WertGruen: 0,
+      WertGruen: 1,
       WertRot: 1
     },
     {
       Wert1: "0",
       Wert2: "+",
       Wert3: "-",
-      WertGruen: 1,
+      WertGruen: 0,
       WertRot: 1
     },
     {
       Wert1: "-",
       Wert2: "+",
       Wert3: "0",
-      WertGruen: 1,
+      WertGruen: -1,
       WertRot: 0
     },
     {
       Wert1: "0",
       Wert2: "-",
       Wert3: "+",
-      WertGruen: -1,
+      WertGruen: 0,
       WertRot: -1
     },
     {
       Wert1: "-",
       Wert2: "0",
       Wert3: "+",
-      WertGruen: 0,
+      WertGruen: -1,
       WertRot: -1,
     }
   ];
@@ -228,42 +228,42 @@ export const antwortenF1 = [
       Wert2: "-",
       Wert3: "0",
       WertGruen: -1,
-      WertRot: 0,
+      WertRot: -1,
     },
     {
       Wert1: "+",
       Wert2: "0",
       Wert3: "-",
       WertGruen: 0,
-      WertRot: 1
+      WertRot: -1
     },
     {
       Wert1: "0",
       Wert2: "+",
       Wert3: "-",
       WertGruen: 1,
-      WertRot: 1
+      WertRot: 0
     },
     {
       Wert1: "-",
       Wert2: "+",
       Wert3: "0",
       WertGruen: 1,
-      WertRot: 0
+      WertRot: 1
     },
     {
       Wert1: "0",
       Wert2: "-",
       Wert3: "+",
       WertGruen: -1,
-      WertRot: -1
+      WertRot: 0
     },
     {
       Wert1: "-",
       Wert2: "0",
       Wert3: "+",
       WertGruen: 0,
-      WertRot: -1,
+      WertRot: 1,
     }
   ];
 
