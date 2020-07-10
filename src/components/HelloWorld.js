@@ -5,6 +5,7 @@ import { fragen } from "../api/Data.js";
 // import Counter from "./components/Counter";
 import ObjectCalculator from "../components/ObjectCalculator";
 import ObjectCalculator2 from "../components/ObjectCalculator2";
+import PieChart from './Charts';
 
 export default function HelloWorld() {
 
@@ -29,12 +30,13 @@ export default function HelloWorld() {
   const wertMitDemIchRechnenKann = wert < 0 ? wert + 1 : wert;
   console.log(wertMitDemIchRechnenKann);
   const Frage1wertRot =
-  antwortenF1[wertMitDemIchRechnenKann].WertRot;
+  antwortenF1[wertMitDemIchRechnenKann + 1 ].WertRot;
+  console.log(Frage1wertRot)
   //----------------Zweite Frage-----------------------------
   // Ein String wird erstellt um mit dem das Array verglichen werden kann
   
   const zweizwei = JSON.stringify(posNum4 + posNum5 + posNum7);
-  console.log(zwei);
+  console.log(zweizwei);
   // Jedes Objekt wird als string umgewandelt und es werden die ersten 3 Werte behalten
   const einszwei = antwortenF2.map(x => JSON.stringify(x.Wert1 + x.Wert2 + x.Wert3)
   );
@@ -45,15 +47,16 @@ export default function HelloWorld() {
   //
   const wert2MitDemIchRechnenKann = wertzwei < 0 ? wertzwei + 1 :
   wertzwei;
-  console.log(wertMitDemIchRechnenKann);
+  console.log( wert2MitDemIchRechnenKann);
   const Frage2wertRot =
   antwortenF2[wert2MitDemIchRechnenKann].WertRot;
-  console.log(Frage1wertRot);
+  console.log( Frage2wertRot);
   const [ergebnisRot, setErgebnisRot] = useState("");
   function calculateTotal() {
   setErgebnisRot(Frage1wertRot + Frage2wertRot);
   }
-  if ( wert && wertzwei > 0) {
+  console.log(ergebnisRot)
+  if ( wert && wertzwei >= 0) {
   return (
   <>
   <div>{fragen[0]}</div>
@@ -83,6 +86,7 @@ export default function HelloWorld() {
           <button onClick={calculateTotal}>Click</button>
   <p>{ergebnisRot} Das ist die Summer der Roten
   Ergebnisse</p>
+  <PieChart iVR={ergebnisRot}/>
   </>
   );
   }
@@ -112,6 +116,7 @@ export default function HelloWorld() {
   <p>{Frage1wertRot}</p>
   <p>{Frage2wertRot}</p>
         <h1>Bitte richtige Werte einsetzen</h1>
+  <PieChart iVR={ergebnisRot}/>
   </>
   );
   }

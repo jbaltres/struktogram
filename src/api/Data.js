@@ -1,5 +1,9 @@
 export const antwortenF1 = [
     {
+      WertGruen: 0,
+      WertRot: 0
+    },
+    {
       Wert1: "+",
       Wert2: "-",
       Wert3: "0",
@@ -44,6 +48,10 @@ export const antwortenF1 = [
   ];
    
   export const antwortenF2 = [
+    {
+      WertGruen: 0,
+      WertRot: 0,
+    },
     {
       Wert1: "+",
       Wert2: "-",
