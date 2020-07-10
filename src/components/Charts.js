@@ -1,20 +1,22 @@
 import React from "react";
 import { Pie } from "react-chartjs-2";
 
-const data = {
-    labels: ["Blue", "Red", "Green"],
+
+
+export default function PieChart({iVR}) {
+  const data = {
+    labels: ["Green", "Red", "Blue"],
     datasets: [
       {
         label: "First dataset",
-        data: [180, 120, 60],
+        data: [13, 13+iVR, 13],
         fill: true,
-        backgroundColor: ["blue","red","green"],
+        backgroundColor: ["greenyellow","tomato","lightblue"],
         borderColor: "rgba(75,192,192,1)"
       },
     ]
   };
-
-export default function PieChart() {
+  
   return (
     <>
      <Pie data={data} /> 
