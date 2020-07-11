@@ -5,7 +5,7 @@ export default function ObjectCalculator2({
   setPosNum4,
   posNum5,
   setPosNum5,
-  posNum100,
+  posNum6,
   setPosNum6
 }) {
   return (
@@ -26,10 +26,10 @@ export default function ObjectCalculator2({
       </p>
       <h3>{antwortenFrage2[2]}</h3>
       <input
-        value={posNum100}
+        value={posNum6}
         onChange={event => setPosNum6(event.target.value)}
       />
-      <span>{posNum100}</span>
+      <span>{posNum6}</span>
     </>
   );
 }

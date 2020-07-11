@@ -3,13 +3,13 @@ import { Pie } from "react-chartjs-2";
 
 
 
-export default function PieChart({iVR}) {
+export default function PieChart({iVR,iGR}) {
   const data = {
     labels: ["Green", "Red", "Blue"],
     datasets: [
       {
         label: "First dataset",
-        data: [13, 13+iVR, 13],
+        data: [12-iVR, 12+iVR-iGR, 12+iGR],
         fill: true,
         backgroundColor: ["greenyellow","tomato","lightblue"],
         borderColor: "rgba(75,192,192,1)"
