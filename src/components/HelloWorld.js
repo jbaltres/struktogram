@@ -16,6 +16,7 @@ import ObjectCalculator5 from "../components/ObjectCalculator5";
 import ObjectCalculator6 from "../components/ObjectCalculator6";
 import ObjectCalculator7 from "../components/ObjectCalculator7";
 // import ObjectCalculator8 from "../components/ObjectCalculator8";
+import styled from "styled-components"
 
 import PieChart from './Charts';
 
@@ -191,11 +192,37 @@ export default function HelloWorld() {
   console.log(ergebnisRot)
   console.log(ergebnisGruen)
 
+  // -------------------Styling----------------------------------------------------------------
+
+  // Styling Box
+
+  const Box = styled.h1`
+  display: flex;
+  justify-content:center;
+  flex-direction: column;
+  font-size: 1.5em;
+  text-align: center;
+  color: palevioletred;
+  width: 50% ;
+  margin-left: 25%;
+  background: #232426;
+`;
+
+// Styling Header 
+const QuestionHead = styled.section`
+  padding: 30px;
+  background: papayawhip;
+`;
+
 
   if ( wert && wertzwei && IndexOfInputfieldstring3 && IndexOfInputfieldstring4 && IndexOfInputfieldstring5 && IndexOfInputfieldstring6 && IndexOfInputfieldstring7 >= 0) {
   return (
   <>
+  <Box>
+    <QuestionHead>
   <div>{fragen[0]}</div>
+  </QuestionHead>
+
   <ObjectCalculator
     posNum={posNum}
     setPosNum={setPosNum}
@@ -204,11 +231,13 @@ export default function HelloWorld() {
     posNum3={posNum3}
     setPosNum3={setPosNum3}
   />
-  <p />
+  </Box>
   <p />
    Nächste Frage
-  <p />
+   <Box>
+    <QuestionHead>
   <div>{fragen[1]}</div>
+  </QuestionHead>
     <ObjectCalculator2
       posNum4={posNum4} 
       setPosNum4={setPosNum4}
@@ -217,11 +246,13 @@ export default function HelloWorld() {
       posNum6={posNum6}
       setPosNum6={setPosNum6}
   />
+  </Box>
   <p />
    Nächste Frage
-  
-  <p />
+   <Box>
+    <QuestionHead>
   <div>{fragen[2]}</div>
+  </QuestionHead>
     <ObjectCalculator3
       posNum7={posNum7} 
       setPosNum7={setPosNum7}
@@ -230,8 +261,12 @@ export default function HelloWorld() {
       posNum9={posNum9}
       setPosNum9={setPosNum9}
   />
+  </Box>
     <p />
+    <Box>
+    <QuestionHead>
   <div>{fragen[3]}</div>
+  </QuestionHead>
     <ObjectCalculator4
       posNum10={posNum10} 
       setPosNum10={setPosNum10}
@@ -240,8 +275,12 @@ export default function HelloWorld() {
       posNum12={posNum12}
       setPosNum12={setPosNum12}
   />
+  </Box>
     <p />
+    <Box>
+      <QuestionHead>
   <div>{fragen[4]}</div>
+      </QuestionHead>
     <ObjectCalculator5
       posNum13={posNum13} 
       setPosNum13={setPosNum13}
@@ -250,8 +289,12 @@ export default function HelloWorld() {
       posNum15={posNum15}
       setPosNum15={setPosNum15}
   />
+    </Box>
     <p />
+    <Box>
+      <QuestionHead>
   <div>{fragen[5]}</div>
+      </QuestionHead>
     <ObjectCalculator6
       posNum16={posNum16} 
       setPosNum16={setPosNum16}
@@ -260,8 +303,12 @@ export default function HelloWorld() {
       posNum18={posNum18}
       setPosNum18={setPosNum18}
   />
+  </Box>
     <p />
+  <Box>
+    <QuestionHead>
   <div>{fragen[6]}</div>
+  </QuestionHead>
     <ObjectCalculator7
       posNum19={posNum19} 
       setPosNum19={setPosNum19}
@@ -270,7 +317,7 @@ export default function HelloWorld() {
       posNum21={posNum21}
       setPosNum21={setPosNum21}
   />
-  
+  </Box>
   <p style={roteErgebnisse}>{Frage1wertRot}</p>
   <p style={grueneErgebnisse}>{Frage1wertGruen}</p>
   <p style={roteErgebnisse}>{Frage2wertRot}</p>
@@ -295,8 +342,12 @@ export default function HelloWorld() {
   );
   }
   return (
-  <>
-  <div>{fragen[0]}</div>
+    <>
+    <Box>
+      <QuestionHead>
+    <div>{fragen[0]}</div>
+    </QuestionHead>
+  
     <ObjectCalculator
       posNum={posNum}
       setPosNum={setPosNum}
@@ -304,91 +355,116 @@ export default function HelloWorld() {
       setPosNum2={setPosNum2}
       posNum3={posNum3}
       setPosNum3={setPosNum3}
-  />
-  <p />
-    Nächste Frage
-  <p />
-  <div>{fragen[1]}</div>
-    <ObjectCalculator2
-      posNum4={posNum4}
-      setPosNum4={setPosNum4}
-      posNum5={posNum5}
-      setPosNum5={setPosNum5}
-      posNum6={posNum6}
-      setPosNum6={setPosNum6}
-  />
-  <p />
-  <div>{fragen[2]}</div>
-    <ObjectCalculator3
-      posNum7={posNum7} 
-      setPosNum7={setPosNum7}
-      posNum8={posNum8}
-      setPosNum8={setPosNum8}
-      posNum9={posNum9}
-      setPosNum9={setPosNum9}
-  />
+    />
+    </Box>
     <p />
-  <div>{fragen[3]}</div>
-    <ObjectCalculator4
-      posNum10={posNum10} 
-      setPosNum10={setPosNum10}
-      posNum11={posNum11}
-      setPosNum11={setPosNum11}
-      posNum12={posNum12}
-      setPosNum12={setPosNum12}
-  />
+     Nächste Frage
+     <Box>
+      <QuestionHead>
+    <div>{fragen[1]}</div>
+    </QuestionHead>
+      <ObjectCalculator2
+        posNum4={posNum4} 
+        setPosNum4={setPosNum4}
+        posNum5={posNum5}
+        setPosNum5={setPosNum5}
+        posNum6={posNum6}
+        setPosNum6={setPosNum6}
+    />
+    </Box>
     <p />
-  <div>{fragen[4]}</div>
-    <ObjectCalculator5
-      posNum13={posNum13} 
-      setPosNum13={setPosNum13}
-      posNum14={posNum14}
-      setPosNum14={setPosNum14}
-      posNum15={posNum15}
-      setPosNum15={setPosNum15}
-  />
-    <p />
-  <div>{fragen[5]}</div>
-    <ObjectCalculator6
-      posNum16={posNum16} 
-      setPosNum16={setPosNum16}
-      posNum17={posNum17}
-      setPosNum17={setPosNum17}
-      posNum18={posNum18}
-      setPosNum18={setPosNum18}
-  />
-    <p />
-  <div>{fragen[6]}</div>
-    <ObjectCalculator7
-      posNum19={posNum19} 
-      setPosNum19={setPosNum19}
-      posNum20={posNum20}
-      setPosNum20={setPosNum20}
-      posNum21={posNum21}
-      setPosNum21={setPosNum21}
-  />
+     Nächste Frage
+     <Box>
+      <QuestionHead>
+    <div>{fragen[2]}</div>
+    </QuestionHead>
+      <ObjectCalculator3
+        posNum7={posNum7} 
+        setPosNum7={setPosNum7}
+        posNum8={posNum8}
+        setPosNum8={setPosNum8}
+        posNum9={posNum9}
+        setPosNum9={setPosNum9}
+    />
+    </Box>
+      <p />
+      <Box>
+      <QuestionHead>
+    <div>{fragen[3]}</div>
+    </QuestionHead>
+      <ObjectCalculator4
+        posNum10={posNum10} 
+        setPosNum10={setPosNum10}
+        posNum11={posNum11}
+        setPosNum11={setPosNum11}
+        posNum12={posNum12}
+        setPosNum12={setPosNum12}
+    />
+    </Box>
+      <p />
+      <Box>
+        <QuestionHead>
+    <div>{fragen[4]}</div>
+        </QuestionHead>
+      <ObjectCalculator5
+        posNum13={posNum13} 
+        setPosNum13={setPosNum13}
+        posNum14={posNum14}
+        setPosNum14={setPosNum14}
+        posNum15={posNum15}
+        setPosNum15={setPosNum15}
+    />
+      </Box>
+      <p />
+      <Box>
+        <QuestionHead>
+    <div>{fragen[5]}</div>
+        </QuestionHead>
+      <ObjectCalculator6
+        posNum16={posNum16} 
+        setPosNum16={setPosNum16}
+        posNum17={posNum17}
+        setPosNum17={setPosNum17}
+        posNum18={posNum18}
+        setPosNum18={setPosNum18}
+    />
+    </Box>
+      <p />
+    <Box>
+      <QuestionHead>
+    <div>{fragen[6]}</div>
+    </QuestionHead>
+      <ObjectCalculator7
+        posNum19={posNum19} 
+        setPosNum19={setPosNum19}
+        posNum20={posNum20}
+        setPosNum20={setPosNum20}
+        posNum21={posNum21}
+        setPosNum21={setPosNum21}
+    />
+    </Box>
+    <p style={roteErgebnisse}>{Frage1wertRot}</p>
+    <p style={grueneErgebnisse}>{Frage1wertGruen}</p>
+    <p style={roteErgebnisse}>{Frage2wertRot}</p>
+    <p style={grueneErgebnisse}>{Frage2WertGruen}</p>
+    <p style={roteErgebnisse}>{Frage3WertRot}</p>
+    <p style={grueneErgebnisse}>{Frage3WertGruen}</p>
+    <p style={roteErgebnisse}>{Frage4WertRot}</p>
+    <p style={grueneErgebnisse}>{Frage3WertGruen}</p>
+    <p style={roteErgebnisse}>{Frage5WertRot}</p>
+    <p style={grueneErgebnisse}>{Frage3WertGruen}</p>
+    <p style={roteErgebnisse}>{Frage6WertRot}</p>
+    <p style={grueneErgebnisse}>{Frage3WertGruen}</p>
+    <p style={roteErgebnisse}>{Frage7WertRot}</p>
+    <p style={grueneErgebnisse}>{Frage3WertGruen}</p>
   
-  <p style={roteErgebnisse}>{Frage1wertRot}</p>
-  <p style={grueneErgebnisse}>{Frage1wertGruen}</p>
-  <p style={roteErgebnisse}>{Frage2wertRot}</p>
-  <p style={grueneErgebnisse}>{Frage2WertGruen}</p>
-  <p style={roteErgebnisse}>{Frage3WertRot}</p>
-  <p style={grueneErgebnisse}>{Frage3WertGruen}</p>
-  <p style={roteErgebnisse}>{Frage4WertRot}</p>
-  <p style={grueneErgebnisse}>{Frage3WertGruen}</p>
-  <p style={roteErgebnisse}>{Frage5WertRot}</p>
-  <p style={grueneErgebnisse}>{Frage3WertGruen}</p>
-  <p style={roteErgebnisse}>{Frage6WertRot}</p>
-  <p style={grueneErgebnisse}>{Frage3WertGruen}</p>
-  <p style={roteErgebnisse}>{Frage7WertRot}</p>
-  <p style={grueneErgebnisse}>{Frage3WertGruen}</p>
-        <h1>Bitte richtige Werte einsetzen</h1>
-  <p style={roteErgebnisse}>{ergebnisRot} Das ist die Summer der Roten
-  Ergebnisse</p>
-  <p style={grueneErgebnisse}>{ergebnisGruen} Das ist die Summer der Grünen
-  Ergebnisse</p>
-  </>
-  );
+    <p style={roteErgebnisse}>{ergebnisRot} Das ist die Summer der Roten
+    Ergebnisse</p>
+    <p style={grueneErgebnisse}>{ergebnisGruen} Das ist die Summer der grünen
+    Ergebnisse</p>
+    <PieChart iVR={ergebnisRot} iGR={ergebnisGruen}/>
+    </>
+    );
   }
   
 
