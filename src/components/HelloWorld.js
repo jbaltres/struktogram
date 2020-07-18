@@ -19,6 +19,7 @@ import ObjectCalculator7 from "../components/ObjectCalculator7";
 import styled from "styled-components"
 
 import PieChart from './Charts';
+import Checkbox from "../components/Q8to10";
 
 export default function HelloWorld() {
 
@@ -43,6 +44,24 @@ export default function HelloWorld() {
   const [posNum19, setPosNum19] = useState("0");
   const [posNum20, setPosNum20] = useState("+");
   const [posNum21, setPosNum21] = useState("-");
+  const [checked22,setChecked22] = useState(false);
+  const [checked23,setChecked23] = useState(false);
+  const [checked24,setChecked24] = useState(false);
+  const [checked25,setChecked25] = useState(false);
+  const [checked26,setChecked26] = useState(false);
+  const [checked27,setChecked27] = useState(false);
+  const [checked28,setChecked28] = useState(false);
+  const [checked29,setChecked29] = useState(false);
+  const [checked30,setChecked30] = useState(false);
+  const [checked31,setChecked31] = useState(false);
+  const [checked32,setChecked32] = useState(false);
+  const [checked33,setChecked33] = useState(false);
+  const [checked34,setChecked34] = useState(false);
+  const [checked35,setChecked35] = useState(false);
+  const [checked36,setChecked36] = useState(false);
+  const [checked37,setChecked37] = useState(false);
+  const [checked38,setChecked38] = useState(false);
+  const [checked39,setChecked39] = useState(false);
 
   const roteErgebnisse = {
     color: 'red'}
@@ -192,8 +211,34 @@ export default function HelloWorld() {
   console.log(ergebnisRot)
   console.log(ergebnisGruen)
 
-  // -------------------Styling----------------------------------------------------------------
+  // -------------------Question 8----------------------------------------------------------------
 
+  const inputfieldvalue22 = checked22 ? 1 : 0;
+  const inputfieldvalue23 = checked23 ? 2 : 0;
+  const inputfieldvalue24 = checked24 ? 3 : 0;
+  const inputfieldvalue25 = checked25 ? 4 : 0;
+  const inputfieldvalue26 = checked26 ? 5 : 0;
+  const inputfieldvalue27 = checked27 ? 6 : 0;
+
+  // -------------------Question 9----------------------------------------------------------------
+
+  const inputfieldvalue28 = checked28 ? 7 : 0;
+  const inputfieldvalue29 = checked29 ? 8 : 0;
+  const inputfieldvalue30 = checked30 ? 52 : 0;
+  const inputfieldvalue31 = checked31 ? 102 : 0;
+  const inputfieldvalue32 = checked32 ? 202 : 0;
+  const inputfieldvalue33 = checked33 ? 402 : 0;
+
+  // -------------------Question 10----------------------------------------------------------------
+
+  const inputfieldvalue34 = checked34 ? 13 : 0;
+  const inputfieldvalue35 = checked35 ? 33: 0;
+  const inputfieldvalue36 = checked36 ? 53 : 0;
+  const inputfieldvalue37 = checked37 ? 103: 0;
+  const inputfieldvalue38 = checked38 ? 203: 0;
+  const inputfieldvalue39 = checked39 ? 403 : 0;
+
+// -------------------Styling----------------------------------------------------------------
   // Styling Box
 
   const Box = styled.h1`
@@ -318,6 +363,42 @@ const QuestionHead = styled.section`
       setPosNum21={setPosNum21}
   />
   </Box>
+  <Checkbox checked={checked22} setChecked={setChecked22} inputfieldvalue={inputfieldvalue22} />
+  <Checkbox checked={checked23} setChecked={setChecked23} inputfieldvalue={inputfieldvalue23} />
+  <Checkbox checked={checked24} setChecked={setChecked24} inputfieldvalue={inputfieldvalue24} />
+  <Checkbox checked={checked25} setChecked={setChecked25} inputfieldvalue={inputfieldvalue25} />
+  <Checkbox checked={checked26} setChecked={setChecked26} inputfieldvalue={inputfieldvalue26} />
+  <Checkbox checked={checked27} setChecked={setChecked27} inputfieldvalue={inputfieldvalue27} />
+  <Checkbox checked={checked28} setChecked={setChecked28} inputfieldvalue={inputfieldvalue28} />
+  <Checkbox checked={checked29} setChecked={setChecked29} inputfieldvalue={inputfieldvalue29} />
+  <Checkbox checked={checked30} setChecked={setChecked30} inputfieldvalue={inputfieldvalue30} />
+  <Checkbox checked={checked31} setChecked={setChecked31} inputfieldvalue={inputfieldvalue31} />
+  <Checkbox checked={checked32} setChecked={setChecked32} inputfieldvalue={inputfieldvalue32} />
+  <Checkbox checked={checked33} setChecked={setChecked33} inputfieldvalue={inputfieldvalue33} />
+  <Checkbox checked={checked34} setChecked={setChecked34} inputfieldvalue={inputfieldvalue34} />
+  <Checkbox checked={checked35} setChecked={setChecked35} inputfieldvalue={inputfieldvalue35} />
+  <Checkbox checked={checked36} setChecked={setChecked36} inputfieldvalue={inputfieldvalue36} />
+  <Checkbox checked={checked37} setChecked={setChecked37} inputfieldvalue={inputfieldvalue37} />
+  <Checkbox checked={checked38} setChecked={setChecked38} inputfieldvalue={inputfieldvalue38} />
+  <Checkbox checked={checked39} setChecked={setChecked39} inputfieldvalue={inputfieldvalue39} />
+  <h3>Q81{inputfieldvalue22}</h3>
+  <h3>Q82{inputfieldvalue23}</h3>
+Q83{inputfieldvalue24}
+Q84{inputfieldvalue25}
+Q85{inputfieldvalue26}
+Q86{inputfieldvalue27}
+Q91{inputfieldvalue28}
+Q92{inputfieldvalue29}
+Q93{inputfieldvalue30}
+Q94{inputfieldvalue31}
+Q95{inputfieldvalue32}
+Q96{inputfieldvalue33}
+Q101{inputfieldvalue34}
+Q102{inputfieldvalue35}
+Q103{inputfieldvalue36}
+Q104:{inputfieldvalue37}
+Q105:{inputfieldvalue38}
+Q106:{inputfieldvalue39}
   <p style={roteErgebnisse}>{Frage1wertRot}</p>
   <p style={grueneErgebnisse}>{Frage1wertGruen}</p>
   <p style={roteErgebnisse}>{Frage2wertRot}</p>
@@ -443,6 +524,42 @@ const QuestionHead = styled.section`
         setPosNum21={setPosNum21}
     />
     </Box>
+    <Checkbox checked={checked22} setChecked={setChecked22} inputfieldvalue={inputfieldvalue22} />
+    <Checkbox checked={checked23} setChecked={setChecked23} inputfieldvalue={inputfieldvalue23} />
+    <Checkbox checked={checked24} setChecked={setChecked24} inputfieldvalue={inputfieldvalue24} />
+    <Checkbox checked={checked25} setChecked={setChecked25} inputfieldvalue={inputfieldvalue25} />
+    <Checkbox checked={checked26} setChecked={setChecked26} inputfieldvalue={inputfieldvalue26} />
+    <Checkbox checked={checked27} setChecked={setChecked27} inputfieldvalue={inputfieldvalue27} />
+    <Checkbox checked={checked28} setChecked={setChecked28} inputfieldvalue={inputfieldvalue28} />
+    <Checkbox checked={checked29} setChecked={setChecked29} inputfieldvalue={inputfieldvalue29} />
+    <Checkbox checked={checked30} setChecked={setChecked30} inputfieldvalue={inputfieldvalue30} />
+    <Checkbox checked={checked31} setChecked={setChecked31} inputfieldvalue={inputfieldvalue31} />
+    <Checkbox checked={checked32} setChecked={setChecked32} inputfieldvalue={inputfieldvalue32} />
+    <Checkbox checked={checked33} setChecked={setChecked33} inputfieldvalue={inputfieldvalue33} />
+    <Checkbox checked={checked34} setChecked={setChecked34} inputfieldvalue={inputfieldvalue34} />
+    <Checkbox checked={checked35} setChecked={setChecked35} inputfieldvalue={inputfieldvalue35} />
+    <Checkbox checked={checked36} setChecked={setChecked36} inputfieldvalue={inputfieldvalue36} />
+    <Checkbox checked={checked37} setChecked={setChecked37} inputfieldvalue={inputfieldvalue37} />
+    <Checkbox checked={checked38} setChecked={setChecked38} inputfieldvalue={inputfieldvalue38} />
+    <Checkbox checked={checked39} setChecked={setChecked39} inputfieldvalue={inputfieldvalue39} />
+    <h3>Q81{inputfieldvalue22}</h3>
+  <h3>Q82{inputfieldvalue23}</h3>
+Q83{inputfieldvalue24}
+Q84{inputfieldvalue25}
+Q85{inputfieldvalue26}
+Q86{inputfieldvalue27}
+Q91{inputfieldvalue28}
+Q92{inputfieldvalue29}
+Q93{inputfieldvalue30}
+Q94{inputfieldvalue31}
+Q95{inputfieldvalue32}
+Q96{inputfieldvalue33}
+Q101{inputfieldvalue34}
+Q102{inputfieldvalue35}
+Q103{inputfieldvalue36}
+Q104{inputfieldvalue37}
+Q105{inputfieldvalue38}
+Q106{inputfieldvalue39}
     <p style={roteErgebnisse}>{Frage1wertRot}</p>
     <p style={grueneErgebnisse}>{Frage1wertGruen}</p>
     <p style={roteErgebnisse}>{Frage2wertRot}</p>
