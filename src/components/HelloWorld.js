@@ -6,6 +6,9 @@ import { antwortenF4 } from "../api/Data.js";
 import { antwortenF5 } from "../api/Data.js";
 import { antwortenF6 } from "../api/Data.js";
 import { antwortenF7 } from "../api/Data.js";
+import { antwortenFrage8 } from "../api/Data.js";
+import { antwortenFrage9 } from "../api/Data.js";
+import { antwortenFrage10 } from "../api/Data.js";
 import { fragen } from "../api/Data.js";
 // import Counter from "./components/Counter";
 import ObjectCalculator from "../components/ObjectCalculator";
@@ -206,19 +209,46 @@ export default function HelloWorld() {
   antwortenF7[newPositiveValue7].WertGruen;
 
 
-  const ergebnisRot= Frage1wertRot + Frage2wertRot + Frage3WertRot + Frage4WertRot + Frage5WertRot + Frage6WertRot + Frage7WertRot
-  const ergebnisGruen = Frage1wertGruen + Frage2WertGruen + Frage3WertGruen + Frage4WertGruen + Frage5WertGruen + Frage6WertGruen + Frage7WertGruen
-  console.log(ergebnisRot)
-  console.log(ergebnisGruen)
-
   // -------------------Question 8----------------------------------------------------------------
 
   const inputfieldvalue22 = checked22 ? 1 : 0;
-  const inputfieldvalue23 = checked23 ? 2 : 0;
-  const inputfieldvalue24 = checked24 ? 3 : 0;
-  const inputfieldvalue25 = checked25 ? 4 : 0;
-  const inputfieldvalue26 = checked26 ? 5 : 0;
-  const inputfieldvalue27 = checked27 ? 6 : 0;
+  const inputfieldvalue23 = checked23 ? 3 : 0;
+  const inputfieldvalue24 = checked24 ? 5 : 0;
+  const inputfieldvalue25 = checked25 ? 10 : 0;
+  const inputfieldvalue26 = checked26 ? 20 : 0;
+  const inputfieldvalue27 = checked27 ? 40 : 0;
+ 
+  const summeFrage8 = inputfieldvalue22 + inputfieldvalue23 + inputfieldvalue24 + inputfieldvalue25 + inputfieldvalue26 + inputfieldvalue27
+  
+  const Frage8WertGruen = (
+    summeFrage8 === 14 ? -1 : // if 
+    summeFrage8 === 24 ? -1 : // else if 
+    summeFrage8 === 16 ? -1 : // else if
+    summeFrage8 === 46 ? 2 : // else if
+    summeFrage8 === 31 ? -1 : // else if
+    summeFrage8 === 51 ? -1 : // else if
+    summeFrage8 === 28 ? -1 : // else if
+    summeFrage8 === 48 ? 2 : // else if
+    summeFrage8 === 33 ? -1 : // else if
+    summeFrage8 === 63 ? -1 : // else if
+    summeFrage8 === 55 ? -1 : // else if
+    summeFrage8 === 65 ? -1 : 0// else 
+  );
+
+  const Frage8WertRot = (
+    summeFrage8 === 14 ? 1 : // if 
+    summeFrage8 === 24 ? -2 : // else if 
+    summeFrage8 === 16 ? 1 : // else if
+    summeFrage8 === 46 ? 1 : // else if
+    summeFrage8 === 31 ? 1 : // else if
+    summeFrage8 === 51 ? 1 : // else if
+    summeFrage8 === 28 ? -2 : // else if
+    summeFrage8 === 48 ? 1 : // else if
+    summeFrage8 === 33 ? -2 : // else if
+    summeFrage8 === 63 ? -2 : // else if
+    summeFrage8 === 55 ? 1 : // else if
+    summeFrage8 === 65 ? 1 : 0// else 
+  );
 
   // -------------------Question 9----------------------------------------------------------------
 
@@ -229,6 +259,38 @@ export default function HelloWorld() {
   const inputfieldvalue32 = checked32 ? 202 : 0;
   const inputfieldvalue33 = checked33 ? 402 : 0;
 
+  const summeFrage9 = inputfieldvalue28 + inputfieldvalue29 + inputfieldvalue30 + inputfieldvalue31 + inputfieldvalue32 + inputfieldvalue33
+  
+  const Frage9WertGruen = (
+    summeFrage9 === 24 ? 2 : // if 
+    summeFrage9 === 44 ? -1 : // else if 
+    summeFrage9 === 16 ? -1 : // else if
+    summeFrage9 === 26 ? 2 : // else if
+    summeFrage9 === 31 ? 2 : // else if
+    summeFrage9 === 61 ? 2 : // else if
+    summeFrage9 === 18 ? -1 : // else if
+    summeFrage9 === 48 ? -1 : // else if
+    summeFrage9 === 53 ? -1 : // else if
+    summeFrage9 === 63 ? -1 : // else if
+    summeFrage9 === 35 ? -1 : // else if
+    summeFrage9 === 55 ? -1 : 0// else 
+  );
+
+  const Frage9WertRot = (
+    summeFrage9 === 24 ? 1: // if 
+    summeFrage9 === 44 ? 1 : // else if 
+    summeFrage9 === 16 ? -2 : // else if
+    summeFrage9 === 26 ? 1 : // else if
+    summeFrage9 === 31 ? 1 : // else if
+    summeFrage9 === 61 ? 1 : // else if
+    summeFrage9 === 18 ? -2 : // else if
+    summeFrage9 === 48 ? 1 : // else if
+    summeFrage9 === 53 ? 1 : // else if
+    summeFrage9 === 63 ? 1 : // else if
+    summeFrage9 === 35 ? -2 : // else if
+    summeFrage9 === 55 ? -2 : 0// else 
+  );
+
   // -------------------Question 10----------------------------------------------------------------
 
   const inputfieldvalue34 = checked34 ? 13 : 0;
@@ -238,6 +300,72 @@ export default function HelloWorld() {
   const inputfieldvalue38 = checked38 ? 203: 0;
   const inputfieldvalue39 = checked39 ? 403 : 0;
 
+const summeFrage10 = inputfieldvalue34 + inputfieldvalue35 + inputfieldvalue36 + inputfieldvalue37 + inputfieldvalue38 + inputfieldvalue39
+  
+let Frage10WertGruen;
+switch(summeFrage10) {
+  case 9:
+   Frage10WertGruen = -1;
+   break;
+  case 24:
+   Frage10WertGruen = -1;
+   break;
+   case 26:
+   Frage10WertGruen = -1;
+   break;
+   case 31:
+   Frage10WertGruen = -1;
+   break;
+   case 51:
+   Frage10WertGruen = 2;
+   break;
+   case 61:
+   Frage10WertGruen = -1;
+   break;
+   case 18:
+   Frage10WertGruen = -1;
+   break;
+   case 28:
+   Frage10WertGruen = -1;
+   break;
+   case 48:
+   Frage10WertGruen = -1;
+   break;
+   case 53:
+   Frage10WertGruen = 2;
+   break;
+   case 35:
+   Frage10WertGruen = 2;
+   break;
+   case 70:
+   Frage10WertGruen = 2;
+   break;
+  default:
+   Frage10WertGruen = 0;
+}
+
+
+    const Frage10WertRot = (
+      summeFrage10 === 9 ? 1 : // if 
+      summeFrage10 === 24 ? -2 : // else if 
+      summeFrage10 === 26 ? -2 : // else if
+      summeFrage10 === 31 ? -2 : // else if
+      summeFrage10 === 51 ? 1: // else if
+      summeFrage10 === 61 ? -2 : // else if
+      summeFrage10 === 18 ? 1 : // else if
+      summeFrage10 === 28 ? 1 : // else if
+      summeFrage10 === 48 ? 1 : // else if
+      summeFrage10 === 53 ? 1 : // else if
+      summeFrage10 === 35 ? 1 : // else if
+      summeFrage10 === 70 ? 1 : 0)// else 
+
+    // -------------------Summe--------------------------------------------------------------
+
+
+  const ergebnisRot= Frage1wertRot + Frage2wertRot + Frage3WertRot + Frage4WertRot + Frage5WertRot + Frage6WertRot + Frage7WertRot + Frage8WertRot + Frage9WertRot + Frage10WertRot
+  const ergebnisGruen = Frage1wertGruen + Frage2WertGruen + Frage3WertGruen + Frage4WertGruen + Frage5WertGruen + Frage6WertGruen + Frage7WertGruen + Frage8WertGruen + Frage9WertGruen + Frage10WertGruen
+  console.log(ergebnisRot)
+  console.log(ergebnisGruen)
 // -------------------Styling----------------------------------------------------------------
   // Styling Box
 
@@ -363,24 +491,70 @@ const QuestionHead = styled.section`
       setPosNum21={setPosNum21}
   />
   </Box>
-  <Checkbox checked={checked22} setChecked={setChecked22} inputfieldvalue={inputfieldvalue22} />
+  <Box>
+  <QuestionHead>
+  <div>{fragen[7]}</div>
+  </QuestionHead>
+  {antwortenFrage8[0]}
+  <Checkbox checked={inputfieldvalue22 + inputfieldvalue23 + inputfieldvalue24 + inputfieldvalue25 + inputfieldvalue26 + inputfieldvalue27 ===  1 ||
+                     inputfieldvalue22 + inputfieldvalue23 + inputfieldvalue24+ inputfieldvalue25 + inputfieldvalue26 + inputfieldvalue27 ===  4 ||
+                     inputfieldvalue22 + inputfieldvalue23 + inputfieldvalue24 + inputfieldvalue25 + inputfieldvalue26 + inputfieldvalue27===  6 ||
+                     inputfieldvalue22 + inputfieldvalue23 + inputfieldvalue24+ inputfieldvalue25 + inputfieldvalue26 + inputfieldvalue27 ===  11 ||
+                     inputfieldvalue22 + inputfieldvalue23 + inputfieldvalue24+ inputfieldvalue25 + inputfieldvalue26 + inputfieldvalue27 ===  21 ||
+                     inputfieldvalue22 + inputfieldvalue23 + inputfieldvalue24 + inputfieldvalue25 + inputfieldvalue26 + inputfieldvalue27===  41 ||
+                     inputfieldvalue22 + inputfieldvalue23 + inputfieldvalue24 + inputfieldvalue25 + inputfieldvalue26 + inputfieldvalue27===  9 ||
+                     inputfieldvalue22 + inputfieldvalue23 + inputfieldvalue24 + inputfieldvalue25 + inputfieldvalue26 + inputfieldvalue27===  14 ||
+                     inputfieldvalue22 + inputfieldvalue23 + inputfieldvalue24 + inputfieldvalue25 + inputfieldvalue26 + inputfieldvalue27===  24 ||
+                     inputfieldvalue22 + inputfieldvalue23 + inputfieldvalue24 + inputfieldvalue25 + inputfieldvalue26 + inputfieldvalue27===  44 ||
+                     inputfieldvalue22 + inputfieldvalue23 + inputfieldvalue24 + inputfieldvalue25 + inputfieldvalue26 + inputfieldvalue27===  16 ||
+                     inputfieldvalue22 + inputfieldvalue23 + inputfieldvalue24 + inputfieldvalue25 + inputfieldvalue26 + inputfieldvalue27===  26 ||
+                     inputfieldvalue22 + inputfieldvalue23 + inputfieldvalue24 + inputfieldvalue25 + inputfieldvalue26 + inputfieldvalue27===  61 ||
+                     inputfieldvalue22 + inputfieldvalue23 + inputfieldvalue24 + inputfieldvalue25 + inputfieldvalue26 + inputfieldvalue27===  31 } setChecked={setChecked22} inputfieldvalue={inputfieldvalue22} />
+  {antwortenFrage8[1]}
   <Checkbox checked={checked23} setChecked={setChecked23} inputfieldvalue={inputfieldvalue23} />
+  {antwortenFrage8[2]}
   <Checkbox checked={checked24} setChecked={setChecked24} inputfieldvalue={inputfieldvalue24} />
+  {antwortenFrage8[3]}
   <Checkbox checked={checked25} setChecked={setChecked25} inputfieldvalue={inputfieldvalue25} />
+  {antwortenFrage8[4]}
   <Checkbox checked={checked26} setChecked={setChecked26} inputfieldvalue={inputfieldvalue26} />
+  {antwortenFrage8[5]}
   <Checkbox checked={checked27} setChecked={setChecked27} inputfieldvalue={inputfieldvalue27} />
+  </Box>
+  <Box>
+  <QuestionHead>
+  <div>{fragen[8]}</div>
+  </QuestionHead>
+  {antwortenFrage9[0]}
   <Checkbox checked={checked28} setChecked={setChecked28} inputfieldvalue={inputfieldvalue28} />
+  {antwortenFrage9[1]}
   <Checkbox checked={checked29} setChecked={setChecked29} inputfieldvalue={inputfieldvalue29} />
+  {antwortenFrage9[2]}
   <Checkbox checked={checked30} setChecked={setChecked30} inputfieldvalue={inputfieldvalue30} />
+  {antwortenFrage9[3]}
   <Checkbox checked={checked31} setChecked={setChecked31} inputfieldvalue={inputfieldvalue31} />
+  {antwortenFrage9[4]}
   <Checkbox checked={checked32} setChecked={setChecked32} inputfieldvalue={inputfieldvalue32} />
+  {antwortenFrage9[5]}
   <Checkbox checked={checked33} setChecked={setChecked33} inputfieldvalue={inputfieldvalue33} />
+  </Box>
+  <Box>
+  <QuestionHead>
+  <div>{fragen[9]}</div>
+  </QuestionHead>
+  {antwortenFrage10[0]}
   <Checkbox checked={checked34} setChecked={setChecked34} inputfieldvalue={inputfieldvalue34} />
+  {antwortenFrage10[1]}
   <Checkbox checked={checked35} setChecked={setChecked35} inputfieldvalue={inputfieldvalue35} />
+  {antwortenFrage10[2]}
   <Checkbox checked={checked36} setChecked={setChecked36} inputfieldvalue={inputfieldvalue36} />
+  {antwortenFrage10[3]}
   <Checkbox checked={checked37} setChecked={setChecked37} inputfieldvalue={inputfieldvalue37} />
+  {antwortenFrage10[4]}
   <Checkbox checked={checked38} setChecked={setChecked38} inputfieldvalue={inputfieldvalue38} />
+  {antwortenFrage10[5]}
   <Checkbox checked={checked39} setChecked={setChecked39} inputfieldvalue={inputfieldvalue39} />
+  </Box>
   <h3>Q81{inputfieldvalue22}</h3>
   <h3>Q82{inputfieldvalue23}</h3>
 Q83{inputfieldvalue24}

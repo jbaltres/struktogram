@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components"
 
 
-export default function Checkbox({checked, setChecked, inputfieldvalue }) {
+export default function Checkbox({checked, setChecked }) {
   
     // Styling Question 
 const QuestionBody = styled.section`
