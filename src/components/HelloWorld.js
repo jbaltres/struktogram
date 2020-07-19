@@ -252,12 +252,12 @@ export default function HelloWorld() {
 
   // -------------------Question 9----------------------------------------------------------------
 
-  const inputfieldvalue28 = checked28 ? 7 : 0;
-  const inputfieldvalue29 = checked29 ? 8 : 0;
-  const inputfieldvalue30 = checked30 ? 52 : 0;
-  const inputfieldvalue31 = checked31 ? 102 : 0;
-  const inputfieldvalue32 = checked32 ? 202 : 0;
-  const inputfieldvalue33 = checked33 ? 402 : 0;
+  const inputfieldvalue28 = checked28 ? 1 : 0;
+  const inputfieldvalue29 = checked29 ? 3 : 0;
+  const inputfieldvalue30 = checked30 ? 5 : 0;
+  const inputfieldvalue31 = checked31 ? 10 : 0;
+  const inputfieldvalue32 = checked32 ? 20 : 0;
+  const inputfieldvalue33 = checked33 ? 40 : 0;
 
   const summeFrage9 = inputfieldvalue28 + inputfieldvalue29 + inputfieldvalue30 + inputfieldvalue31 + inputfieldvalue32 + inputfieldvalue33
   
@@ -293,12 +293,12 @@ export default function HelloWorld() {
 
   // -------------------Question 10----------------------------------------------------------------
 
-  const inputfieldvalue34 = checked34 ? 13 : 0;
-  const inputfieldvalue35 = checked35 ? 33: 0;
-  const inputfieldvalue36 = checked36 ? 53 : 0;
-  const inputfieldvalue37 = checked37 ? 103: 0;
-  const inputfieldvalue38 = checked38 ? 203: 0;
-  const inputfieldvalue39 = checked39 ? 403 : 0;
+  const inputfieldvalue34 = checked34 ? 1 : 0;
+  const inputfieldvalue35 = checked35 ? 3: 0;
+  const inputfieldvalue36 = checked36 ? 5 : 0;
+  const inputfieldvalue37 = checked37 ? 10: 0;
+  const inputfieldvalue38 = checked38 ? 20: 0;
+  const inputfieldvalue39 = checked39 ? 40 : 0;
 
 const summeFrage10 = inputfieldvalue34 + inputfieldvalue35 + inputfieldvalue36 + inputfieldvalue37 + inputfieldvalue38 + inputfieldvalue39
   
@@ -366,7 +366,9 @@ switch(summeFrage10) {
   const ergebnisGruen = Frage1wertGruen + Frage2WertGruen + Frage3WertGruen + Frage4WertGruen + Frage5WertGruen + Frage6WertGruen + Frage7WertGruen + Frage8WertGruen + Frage9WertGruen + Frage10WertGruen
   console.log(ergebnisRot)
   console.log(ergebnisGruen)
+
 // -------------------Styling----------------------------------------------------------------
+
   // Styling Box
 
   const Box = styled.h1`
@@ -496,20 +498,7 @@ const QuestionHead = styled.section`
   <div>{fragen[7]}</div>
   </QuestionHead>
   {antwortenFrage8[0]}
-  <Checkbox checked={inputfieldvalue22 + inputfieldvalue23 + inputfieldvalue24 + inputfieldvalue25 + inputfieldvalue26 + inputfieldvalue27 ===  1 ||
-                     inputfieldvalue22 + inputfieldvalue23 + inputfieldvalue24+ inputfieldvalue25 + inputfieldvalue26 + inputfieldvalue27 ===  4 ||
-                     inputfieldvalue22 + inputfieldvalue23 + inputfieldvalue24 + inputfieldvalue25 + inputfieldvalue26 + inputfieldvalue27===  6 ||
-                     inputfieldvalue22 + inputfieldvalue23 + inputfieldvalue24+ inputfieldvalue25 + inputfieldvalue26 + inputfieldvalue27 ===  11 ||
-                     inputfieldvalue22 + inputfieldvalue23 + inputfieldvalue24+ inputfieldvalue25 + inputfieldvalue26 + inputfieldvalue27 ===  21 ||
-                     inputfieldvalue22 + inputfieldvalue23 + inputfieldvalue24 + inputfieldvalue25 + inputfieldvalue26 + inputfieldvalue27===  41 ||
-                     inputfieldvalue22 + inputfieldvalue23 + inputfieldvalue24 + inputfieldvalue25 + inputfieldvalue26 + inputfieldvalue27===  9 ||
-                     inputfieldvalue22 + inputfieldvalue23 + inputfieldvalue24 + inputfieldvalue25 + inputfieldvalue26 + inputfieldvalue27===  14 ||
-                     inputfieldvalue22 + inputfieldvalue23 + inputfieldvalue24 + inputfieldvalue25 + inputfieldvalue26 + inputfieldvalue27===  24 ||
-                     inputfieldvalue22 + inputfieldvalue23 + inputfieldvalue24 + inputfieldvalue25 + inputfieldvalue26 + inputfieldvalue27===  44 ||
-                     inputfieldvalue22 + inputfieldvalue23 + inputfieldvalue24 + inputfieldvalue25 + inputfieldvalue26 + inputfieldvalue27===  16 ||
-                     inputfieldvalue22 + inputfieldvalue23 + inputfieldvalue24 + inputfieldvalue25 + inputfieldvalue26 + inputfieldvalue27===  26 ||
-                     inputfieldvalue22 + inputfieldvalue23 + inputfieldvalue24 + inputfieldvalue25 + inputfieldvalue26 + inputfieldvalue27===  61 ||
-                     inputfieldvalue22 + inputfieldvalue23 + inputfieldvalue24 + inputfieldvalue25 + inputfieldvalue26 + inputfieldvalue27===  31 } setChecked={setChecked22} inputfieldvalue={inputfieldvalue22} />
+  <Checkbox checked={checked22} setChecked={setChecked22} inputfieldvalue={inputfieldvalue22} />
   {antwortenFrage8[1]}
   <Checkbox checked={checked23} setChecked={setChecked23} inputfieldvalue={inputfieldvalue23} />
   {antwortenFrage8[2]}
@@ -580,13 +569,19 @@ Q106:{inputfieldvalue39}
   <p style={roteErgebnisse}>{Frage3WertRot}</p>
   <p style={grueneErgebnisse}>{Frage3WertGruen}</p>
   <p style={roteErgebnisse}>{Frage4WertRot}</p>
-  <p style={grueneErgebnisse}>{Frage3WertGruen}</p>
+  <p style={grueneErgebnisse}>{Frage4WertGruen}</p>
   <p style={roteErgebnisse}>{Frage5WertRot}</p>
-  <p style={grueneErgebnisse}>{Frage3WertGruen}</p>
+  <p style={grueneErgebnisse}>{Frage5WertGruen}</p>
   <p style={roteErgebnisse}>{Frage6WertRot}</p>
-  <p style={grueneErgebnisse}>{Frage3WertGruen}</p>
+  <p style={grueneErgebnisse}>{Frage6WertGruen}</p>
   <p style={roteErgebnisse}>{Frage7WertRot}</p>
-  <p style={grueneErgebnisse}>{Frage3WertGruen}</p>
+  <p style={grueneErgebnisse}>{Frage7WertGruen}</p>
+  <p style={roteErgebnisse}>{Frage8WertRot}</p>
+  <p style={grueneErgebnisse}>{Frage8WertGruen}</p>
+  <p style={roteErgebnisse}>{Frage9WertRot}</p>
+  <p style={grueneErgebnisse}>{Frage9WertGruen}</p>
+  <p style={roteErgebnisse}>{Frage10WertRot}</p>
+  <p style={grueneErgebnisse}>{Frage10WertGruen}</p>
 
   <p style={roteErgebnisse}>{ergebnisRot} Das ist die Summer der Roten
   Ergebnisse</p>
