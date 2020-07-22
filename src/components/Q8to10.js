@@ -5,16 +5,29 @@ import styled from "styled-components"
 export default function Checkbox({checked, setChecked }) {
   
     // Styling Question 
-const QuestionBody = styled.section`
-font-size: 16px;
-color: white;
-padding: 0px 20px
+
+const Inputstyle = styled.input`
+width: 30px;
+font-size: 1.5em;
+text-align: center;
+width: 30px;
+height: 30px;
+`;
+  
+
+const InputColumn = styled.td`
+display:flex;
+align-items:center;
+justify-content: center;
+width: 200px;
+align-items:center;
+height: 70px;
 `;
 
 
   return (
-    <QuestionBody>
-      <input checked={checked} maxLength="1" type="checkbox" onChange={e => setChecked(!checked)} />
-    </QuestionBody>
+    <InputColumn>
+      <Inputstyle checked={checked} maxLength="1" type="checkbox" onChange={e => setChecked(!checked)} />
+    </InputColumn>
   );
 }

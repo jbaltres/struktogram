@@ -366,27 +366,61 @@ switch(summeFrage10) {
   // Styling Box
 
   const Container1 = styled.div`
-  display: flex;
+  display: flex;  
   align-items:center;
-  justify-content: center;
+  justify-content: space-around;
+  margin: 0px 7px;
   background: #232426;
   flex-wrap:wrap
 `;
 
 const Item1 = styled.div`
 color: white;
-max-width: 40vw;
+width: 400px;
 margin: 30px;`;
 
 const Item2 = styled.div`
 margin: 5px;
-width: 500px;
-color: black`;
+width: 50%;
+@media (max-width: 500px){
+  width: 83%;
+}
+color: black;`;
+
+const QuestionColumn = styled.div`
+display: flex; 
+align-items: center;
+height: 50px;
+margin: 5px;
+height: 70px;
+`;
+
+const TableRowQ8to10 = styled.tr`
+display: flex;
+align-items: center;
+border: solid silver 2px;
+background-color: grey;
+margin-bottom: 3px;
+padding: 5px;
+`;
+
+const Headline = styled.span`
+color :${props => props.textcolor};
+font-size: 5em;
+@media (max-width: 700px){
+  font-size: 2em
+}
+margin-top:0.67em;
+font-weight: bold
+`;
 
 
   if ( wert && wertzwei && IndexOfInputfieldstring3 && IndexOfInputfieldstring4 && IndexOfInputfieldstring5 && IndexOfInputfieldstring6 && IndexOfInputfieldstring7 >= 0) {
   return (
   <>
+  <p/>
+  <Headline textcolor="yellowgreen">STRU</Headline><Headline textcolor="tomato">KTOG</Headline><Headline textcolor="lightblue">RAMM</Headline>
+  <p/>
   <Container1>
     <Item1>
         <div>{fragen[0]}</div>
@@ -403,7 +437,7 @@ color: black`;
     </Item2> 
   </Container1>  
   <p />
-   Nächste Frage
+Frage 2
    <Container1>
     <Item1> 
       <div>{fragen[1]}</div>
@@ -420,7 +454,7 @@ color: black`;
      </Item2> 
    </Container1>   
   <p />
-   Nächste Frage
+Frage 3
    <Container1>
     <Item1>  
       <div>{fragen[2]}</div>
@@ -436,7 +470,7 @@ color: black`;
   />
    </Item2> 
    </Container1> 
-   Nächste Frage
+Frage 4
    <Container1>
     <Item1> 
       <div>{fragen[3]}</div>
@@ -452,7 +486,7 @@ color: black`;
   />
      </Item2> 
    </Container1> 
-   Nächste Frage
+Frage 5
    <Container1>
     <Item1> 
       <div>{fragen[4]}</div>
@@ -468,7 +502,7 @@ color: black`;
   />
      </Item2> 
    </Container1>   
-Nächste Frage
+Frage 6
    <Container1>
     <Item1> 
       <div>{fragen[5]}</div>
@@ -484,7 +518,7 @@ Nächste Frage
   />
        </Item2> 
    </Container1> 
-Nächste Frage
+Frage 7
    <Container1>
     <Item1> 
       <div>{fragen[6]}</div>
@@ -506,58 +540,135 @@ Nächste Frage
       <div>{fragen[7]}</div>
     </Item1>  
     <Item2>
-  {antwortenFrage8[0]}
-  <Checkbox checked={checked22} setChecked={setChecked22} inputfieldvalue={inputfieldvalue22} />
-  </Item2>
-  <Item2>
-  {antwortenFrage8[1]}
-  <Checkbox checked={checked23} setChecked={setChecked23} inputfieldvalue={inputfieldvalue23} />
-  </Item2>
-  <Item2>
-  {antwortenFrage8[2]}
-  <Checkbox checked={checked24} setChecked={setChecked24} inputfieldvalue={inputfieldvalue24} />
-  </Item2>
-  <Item2>
-  {antwortenFrage8[3]}
-  <Checkbox checked={checked25} setChecked={setChecked25} inputfieldvalue={inputfieldvalue25} />
-  </Item2>
-  <Item2>
-  {antwortenFrage8[4]}
-  <Checkbox checked={checked26} setChecked={setChecked26} inputfieldvalue={inputfieldvalue26} />
-  </Item2><Item2>
-  {antwortenFrage8[5]}
-  <Checkbox checked={checked27} setChecked={setChecked27} inputfieldvalue={inputfieldvalue27} />
+      <TableRowQ8to10>
+        <QuestionColumn>
+          {antwortenFrage8[0]}
+        </QuestionColumn>
+       <Checkbox checked={checked22} setChecked={setChecked22} inputfieldvalue={inputfieldvalue22} />
+      </TableRowQ8to10>
+      <TableRowQ8to10>
+        <QuestionColumn>
+          {antwortenFrage8[1]}
+        </QuestionColumn>
+       <Checkbox checked={checked23} setChecked={setChecked23} inputfieldvalue={inputfieldvalue23} />
+      </TableRowQ8to10>
+      <TableRowQ8to10>
+        <QuestionColumn>
+          {antwortenFrage8[2]}
+        </QuestionColumn>
+       <Checkbox checked={checked24} setChecked={setChecked24} inputfieldvalue={inputfieldvalue24} />
+      </TableRowQ8to10>
+      <TableRowQ8to10>
+        <QuestionColumn>
+          {antwortenFrage8[3]}
+        </QuestionColumn>
+       <Checkbox checked={checked25} setChecked={setChecked25} inputfieldvalue={inputfieldvalue25} />
+      </TableRowQ8to10>
+      <TableRowQ8to10>
+        <QuestionColumn>
+          {antwortenFrage8[4]}
+        </QuestionColumn>
+       <Checkbox checked={checked26} setChecked={setChecked26} inputfieldvalue={inputfieldvalue26} />
+      </TableRowQ8to10>
+      <TableRowQ8to10>
+        <QuestionColumn>
+          {antwortenFrage8[5]}
+        </QuestionColumn>
+       <Checkbox checked={checked27} setChecked={setChecked27} inputfieldvalue={inputfieldvalue27} />
+      </TableRowQ8to10>      
   </Item2>
   </Container1>
-  <p/>
-  <div>{fragen[8]}</div>
+  <p>Frage 9</p>
+   <Container1>
+     <Item1>
+      <div>{fragen[8]}</div>
+    </Item1>  
+    <Item2>
+      <TableRowQ8to10>
+        <QuestionColumn>
+          {antwortenFrage9[0]}
+        </QuestionColumn>
+       <Checkbox checked={checked28} setChecked={setChecked28} inputfieldvalue={inputfieldvalue28} />
+      </TableRowQ8to10> 
+      <TableRowQ8to10>
+        <QuestionColumn>
+          {antwortenFrage9[1]}
+        </QuestionColumn>
+       <Checkbox checked={checked29} setChecked={setChecked29} inputfieldvalue={inputfieldvalue29} />
+      </TableRowQ8to10> 
+      <TableRowQ8to10>
+        <QuestionColumn>
+          {antwortenFrage9[2]}
+        </QuestionColumn>
+       <Checkbox checked={checked30} setChecked={setChecked30} inputfieldvalue={inputfieldvalue30} />
+      </TableRowQ8to10> 
+      <TableRowQ8to10>
+        <QuestionColumn>
+          {antwortenFrage9[3]}
+        </QuestionColumn>
+       <Checkbox checked={checked31} setChecked={setChecked31} inputfieldvalue={inputfieldvalue31} />
+      </TableRowQ8to10> 
+      <TableRowQ8to10>
+        <QuestionColumn>
+          {antwortenFrage9[4]}
+        </QuestionColumn>
+       <Checkbox checked={checked32} setChecked={setChecked32} inputfieldvalue={inputfieldvalue32} />
+      </TableRowQ8to10> 
+      <TableRowQ8to10>
+        <QuestionColumn>
+          {antwortenFrage9[5]}
+        </QuestionColumn>
+       <Checkbox checked={checked33} setChecked={setChecked33} inputfieldvalue={inputfieldvalue33} />
+      </TableRowQ8to10> 
+    </Item2>
+  </Container1>
+
+  <p>Frage 9</p>
+   <Container1>
+     <Item1>
+      <div>{fragen[8]}</div>
+    </Item1>  
+    <Item2>
+      <TableRowQ8to10>
+        <QuestionColumn>
+          {antwortenFrage10[0]}
+        </QuestionColumn>
+       <Checkbox checked={checked34} setChecked={setChecked34} inputfieldvalue={inputfieldvalue34} />
+      </TableRowQ8to10> 
+      <TableRowQ8to10>
+        <QuestionColumn>
+          {antwortenFrage10[1]}
+        </QuestionColumn>
+       <Checkbox checked={checked35} setChecked={setChecked35} inputfieldvalue={inputfieldvalue35} />
+      </TableRowQ8to10> 
+      <TableRowQ8to10>
+        <QuestionColumn>
+          {antwortenFrage10[2]}
+        </QuestionColumn>
+       <Checkbox checked={checked36} setChecked={setChecked36} inputfieldvalue={inputfieldvalue36} />
+      </TableRowQ8to10> 
+      <TableRowQ8to10>
+        <QuestionColumn>
+          {antwortenFrage10[3]}
+        </QuestionColumn>
+       <Checkbox checked={checked37} setChecked={setChecked37} inputfieldvalue={inputfieldvalue37} />
+      </TableRowQ8to10> 
+      <TableRowQ8to10>
+      <QuestionColumn>
+        {antwortenFrage10[4]}
+      </QuestionColumn>
+     <Checkbox checked={checked38} setChecked={setChecked38} inputfieldvalue={inputfieldvalue38} />
+    </TableRowQ8to10> 
+    <TableRowQ8to10>
+        <QuestionColumn>
+          {antwortenFrage10[5]}
+        </QuestionColumn>
+       <Checkbox checked={checked39} setChecked={setChecked39} inputfieldvalue={inputfieldvalue39} />
+      </TableRowQ8to10> 
+    </Item2> 
+   </Container1> 
   
-  {antwortenFrage9[0]}
-  <Checkbox checked={checked28} setChecked={setChecked28} inputfieldvalue={inputfieldvalue28} />
-  {antwortenFrage9[1]}
-  <Checkbox checked={checked29} setChecked={setChecked29} inputfieldvalue={inputfieldvalue29} />
-  {antwortenFrage9[2]}
-  <Checkbox checked={checked30} setChecked={setChecked30} inputfieldvalue={inputfieldvalue30} />
-  {antwortenFrage9[3]}
-  <Checkbox checked={checked31} setChecked={setChecked31} inputfieldvalue={inputfieldvalue31} />
-  {antwortenFrage9[4]}
-  <Checkbox checked={checked32} setChecked={setChecked32} inputfieldvalue={inputfieldvalue32} />
-  {antwortenFrage9[5]}
-  <Checkbox checked={checked33} setChecked={setChecked33} inputfieldvalue={inputfieldvalue33} />
-  <p/>
-  <div>{fragen[9]}</div>
-  {antwortenFrage10[0]}
-  <Checkbox checked={checked34} setChecked={setChecked34} inputfieldvalue={inputfieldvalue34} />
-  {antwortenFrage10[1]}
-  <Checkbox checked={checked35} setChecked={setChecked35} inputfieldvalue={inputfieldvalue35} />
-  {antwortenFrage10[2]}
-  <Checkbox checked={checked36} setChecked={setChecked36} inputfieldvalue={inputfieldvalue36} />
-  {antwortenFrage10[3]}
-  <Checkbox checked={checked37} setChecked={setChecked37} inputfieldvalue={inputfieldvalue37} />
-  {antwortenFrage10[4]}
-  <Checkbox checked={checked38} setChecked={setChecked38} inputfieldvalue={inputfieldvalue38} />
-  {antwortenFrage10[5]}
-  <Checkbox checked={checked39} setChecked={setChecked39} inputfieldvalue={inputfieldvalue39} />
+  
   <h3>Q81{inputfieldvalue22}</h3>
   <h3>Q82{inputfieldvalue23}</h3>
 Q83{inputfieldvalue24}
@@ -565,6 +676,7 @@ Q84{inputfieldvalue25}
 Q85{inputfieldvalue26}
 Q86{inputfieldvalue27}
 Q91{inputfieldvalue28}
+<p/>
 Q92{inputfieldvalue29}
 Q93{inputfieldvalue30}
 Q94{inputfieldvalue31}
@@ -572,6 +684,7 @@ Q95{inputfieldvalue32}
 Q96{inputfieldvalue33}
 Q101{inputfieldvalue34}
 Q102{inputfieldvalue35}
+<p/>
 Q103{inputfieldvalue36}
 Q104:{inputfieldvalue37}
 Q105:{inputfieldvalue38}
