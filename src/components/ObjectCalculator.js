@@ -42,6 +42,7 @@ align-items: center;
 height: 50px;
 margin: 5px;
 height: 70px;
+
 `;
 
 return (
@@ -52,7 +53,7 @@ return (
       </QuestionColumn>
       <InputColumn>
        <Inputstyle value={stateQuestion1} maxLength="1" onChange={event => setStateQuestion1(event.target.value)} />
-       <span>{stateQuestion1}</span>
+       
       </InputColumn> 
     </Container>
     <Container>
@@ -65,7 +66,7 @@ return (
           maxLength="1"
           onChange={event => setStateQuestion2(event.target.value)}
         />
-        <span>{stateQuestion2}</span>
+        
       </InputColumn>
     </Container>  
     <Container>
@@ -78,7 +79,7 @@ return (
         maxLength="1"
         onChange={event => setStateQuestion3(event.target.value)}
       />
-      <span>{stateQuestion3}</span>
+      
       </InputColumn>
     </Container>
     </>
