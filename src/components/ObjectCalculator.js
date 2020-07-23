@@ -23,6 +23,7 @@ align-items: center;
 border: solid silver 2px;
 background-color: grey;
 margin-bottom: 3px;
+
 `;
 
 const InputColumn = styled.td`
@@ -32,6 +33,7 @@ justify-content: center;
 width: 200px;
 align-items:center;
 height: 70px;
+padding: 20px 0px;
 `;
 
 const QuestionColumn = styled.div`
