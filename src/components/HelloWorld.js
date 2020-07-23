@@ -20,27 +20,27 @@ import Checkbox from "../components/Q8to10";
 
 export default function HelloWorld() {
 
-  const [value1, setValue1] = useState("+");
-  const [value2, setValue2] = useState("-");
-  const [value3, setValue3] = useState("0");
-  const [value4, setValue4] = useState("0");
-  const [value5, setValue5] = useState("+");
-  const [value6, setValue6] = useState("-");
-  const [value7, setValue7] = useState("0");
-  const [value8, setValue8] = useState("+");
-  const [value9, setValue9] = useState("-");
-  const [value10, setValue10] = useState("0");
-  const [value11, setValue11] = useState("+");
-  const [value12, setValue12] = useState("-");
-  const [value13, setValue13] = useState("0");
-  const [value14, setValue14] = useState("-");
-  const [value15, setValue15] = useState("+");
-  const [value16, setValue16] = useState("0");
-  const [value17, setValue17] = useState("+");
-  const [value18, setValue18] = useState("-");
-  const [value19, setValue19] = useState("0");
-  const [value20, setValue20] = useState("+");
-  const [value21, setValue21] = useState("-");
+  const [value1, setValue1] = useState("");
+  const [value2, setValue2] = useState("");
+  const [value3, setValue3] = useState("");
+  const [value4, setValue4] = useState("");
+  const [value5, setValue5] = useState("");
+  const [value6, setValue6] = useState("");
+  const [value7, setValue7] = useState("");
+  const [value8, setValue8] = useState("");
+  const [value9, setValue9] = useState("");
+  const [value10, setValue10] = useState("");
+  const [value11, setValue11] = useState("");
+  const [value12, setValue12] = useState("");
+  const [value13, setValue13] = useState("");
+  const [value14, setValue14] = useState("");
+  const [value15, setValue15] = useState("");
+  const [value16, setValue16] = useState("");
+  const [value17, setValue17] = useState("");
+  const [value18, setValue18] = useState("");
+  const [value19, setValue19] = useState("");
+  const [value20, setValue20] = useState("");
+  const [value21, setValue21] = useState("");
   const [checked22,setChecked22] = useState(false);
   const [checked23,setChecked23] = useState(false);
   const [checked24,setChecked24] = useState(false);
@@ -66,8 +66,26 @@ export default function HelloWorld() {
  const grueneErgebnisse = {
   color: 'green'}
 
+  const realValue1 = (
+    value1 === "0" ? "0" : // if 
+    value1 === "" ? "":
+    value1 === "-" ? "-" :
+    value1 === "+" ? "+" : alert("Gib den richtigen Wert ein du Hund") )
+
+    const realValue2 = (
+      value2 === "0" ? "0" : // if 
+      value2 === "" ? "":
+      value2 === "-" ? "-" :
+      value2 === "+" ? "+" : alert("Gib den richtigen Wert ein du Hund") )
+
+  const realValue3 = (
+    value3 === "0" ? "0" : // if 
+    value3 === "" ? "":
+    value3 === "-" ? "-" :
+    value3 === "+" ? "+" : alert("Gib den richtigen Wert ein du Hund") ) // else if
+
   // Ein String wird erstellt um mit dem das Array verglichen werden kann
-  const zwei = JSON.stringify(value1 + value2 + value3);
+  const zwei = JSON.stringify(realValue1 + realValue2 + realValue3);
   console.log(zwei);
   // Jedes Objekt wird als string umgewandelt und es werden die ersten 3 Werte behalten
   const eins = antwortenF1.map(x =>
@@ -462,7 +480,7 @@ color: black;`;
 const QuestionColumn = styled.div`
 display: flex; 
 align-items: center;
-height: 50px;
+width: 200%;
 margin: 5px;
 height: 70px;
 `;
