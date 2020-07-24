@@ -66,26 +66,9 @@ export default function HelloWorld() {
  const grueneErgebnisse = {
   color: 'green'}
 
-  const realValue1 = (
-    value1 === "0" ? "0" : // if 
-    value1 === "" ? "":
-    value1 === "-" ? "-" :
-    value1 === "+" ? "+" : alert("Gib den richtigen Wert ein du Hund") )
-
-    const realValue2 = (
-      value2 === "0" ? "0" : // if 
-      value2 === "" ? "":
-      value2 === "-" ? "-" :
-      value2 === "+" ? "+" : alert("Gib den richtigen Wert ein du Hund") )
-
-  const realValue3 = (
-    value3 === "0" ? "0" : // if 
-    value3 === "" ? "":
-    value3 === "-" ? "-" :
-    value3 === "+" ? "+" : alert("Gib den richtigen Wert ein du Hund") ) // else if
 
   // Ein String wird erstellt um mit dem das Array verglichen werden kann
-  const zwei = JSON.stringify(realValue1 + realValue2 + realValue3);
+  const zwei = JSON.stringify(value1 + value2 + value3);
   console.log(zwei);
   // Jedes Objekt wird als string umgewandelt und es werden die ersten 3 Werte behalten
   const eins = antwortenF1.map(x =>
