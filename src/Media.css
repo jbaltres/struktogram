@@ -1,0 +1,9 @@
+.Item2 {
+    margin: 5px;
+    width: 50%;
+    color: black;
+  }
+@media (max-width: 768px){
+    .Item33 {width: 83%}}
+  
+  
