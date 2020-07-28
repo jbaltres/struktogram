@@ -17,6 +17,7 @@ import styled from "styled-components"
 
 import PieChart from './Charts';
 import Checkbox from "../components/Q8to10";
+import '../Media.css';
 
 export default function HelloWorld() {
 
@@ -438,27 +439,30 @@ const renderchart10 = (
 
   // Styling Box
 
-  const Container1 = styled.div`
-  display: flex;  
-  align-items:center;
-  justify-content: space-around;
-  margin: 0px 7px;
-  background: #232426;
-  flex-wrap:wrap
-`;
+  const Container1 = {
+  display: "flex", 
+  flexWrap: "wrap",
+  alignItems:"center",
+  justifyContent: "space-around",
+  margin: "0px 7px",
+  background:"#232426",
+  flexwrap:"wrap"
+  }
 
-const Item1 = styled.div`
-color: white;
-width: 400px;
-margin: 30px;`;
-
-const Item2 = styled.div`
-margin: 5px;
-width: 50%;
-@media (max-width: 500px){
-  width: 83%;
+const Item1 = {
+color: "white",
+width: "400px",
+margin: "30px"
 }
-color: black;`;
+
+const Item2 = {
+  color: "white",
+  width: "400px",
+  margin: "auto",
+
+  }
+
+
 
 const QuestionColumn = styled.div`
 display: flex; 
@@ -494,125 +498,177 @@ font-weight: bold
   <p/>
   <Headline textcolor="yellowgreen">STRU</Headline><Headline textcolor="tomato">KTOG</Headline><Headline textcolor="lightblue">RAMM</Headline>
   <p/>
-  <Container1>
-    <Item1>
-        <div>{fragen[0]}</div>
-    </Item1>    
-    <Item2>  
-      <ObjectCalculator
-      stateQuestion1={value1}
-      setStateQuestion1={setValue1}
-      stateQuestion2={value2}
-      setStateQuestion2={setValue2}
-      stateQuestion3={value3}
-      setStateQuestion3={setValue3}
+  <div style={Container1}>
+      <div style = {Item1}>
+          <div>{fragen[0]}</div>
+      </div>    
+      <div className="Item2">  
+        <ObjectCalculator
+      value={value1} 
+      maxLength="1" 
+      onChange={event => setValue1(event.target.value)}
       />
-    </Item2> 
-  </Container1>  
-  <p />
-Frage 2
-   <Container1>
-    <Item1> 
-      <div>{fragen[1]}</div>
-    </Item1>    
-    <Item2> 
-    <ObjectCalculator
-      stateQuestion1={value4} 
-      setStateQuestion1={setValue4}
-      stateQuestion2={value5}
-      setStateQuestion2={setValue5}
-      stateQuestion3={value6}
-      setStateQuestion3={setValue6}
-  />
-     </Item2> 
-   </Container1>   
-  <p />
-Frage 3
-   <Container1>
-    <Item1>  
-      <div>{fragen[2]}</div>
-    </Item1>    
-    <Item2> 
-    <ObjectCalculator
-      stateQuestion1={value7} 
-      setStateQuestion1={setValue7}
-      stateQuestion2={value8}
-      setStateQuestion2={setValue8}
-      stateQuestion3={value9}
-      setStateQuestion3={setValue9}
-  />
-   </Item2> 
-   </Container1> 
-Frage 4
-   <Container1>
-    <Item1> 
-      <div>{fragen[3]}</div>
-    </Item1>    
-    <Item2> 
-    <ObjectCalculator
-      stateQuestion1={value10} 
-      setStateQuestion1={setValue10}
-      stateQuestion2={value11}
-      setStateQuestion2={setValue11}
-      stateQuestion3={value12}
-      setStateQuestion3={setValue12}
-  />
-     </Item2> 
-   </Container1> 
-Frage 5
-   <Container1>
-    <Item1> 
-      <div>{fragen[4]}</div>
-    </Item1>    
-    <Item2> 
-    <ObjectCalculator
-      stateQuestion1={value13} 
-      setStateQuestion1={setValue13}
-      stateQuestion2={value14}
-      setStateQuestion2={setValue14}
-      stateQuestion3={value15}
-      setStateQuestion3={setValue15}
-  />
-     </Item2> 
-   </Container1>   
-Frage 6
-   <Container1>
-    <Item1> 
-      <div>{fragen[5]}</div>
-    </Item1>    
-    <Item2> 
-    <ObjectCalculator
-      stateQuestion1={value16} 
-      setStateQuestion1={setValue16}
-      stateQuestion2={value17}
-      setStateQuestion2={setValue17}
-      stateQuestion3={value18}
-      setStateQuestion3={setValue18}
-  />
-       </Item2> 
-   </Container1> 
-Frage 7
-   <Container1>
-    <Item1> 
-      <div>{fragen[6]}</div>
-    </Item1>    
-    <Item2> 
-    <ObjectCalculator
-      stateQuestion1={value19} 
-      setStateQuestion1={setValue19}
-      stateQuestion2={value20}
-      setStateQuestion2={setValue20}
-      stateQuestion3={value21}
-      setStateQuestion3={setValue21}
-  />
-       </Item2> 
-   </Container1> 
+      <ObjectCalculator
+      value={value2} 
+      maxLength="1" 
+      onChange={event => setValue2(event.target.value)}
+      />
+      <ObjectCalculator
+      value={value3} 
+      maxLength="1" 
+      onChange={event => setValue3(event.target.value)}
+      />
+      </div>
+  
+    </div>  
+    <p />
+  Frage 2
+     <div style={Container1}>
+      <div style = {Item1}> 
+        <div>{fragen[1]}</div>
+      </div>    
+      <div className="Item2">  
+        <ObjectCalculator
+      value={value4} 
+      maxLength="1" 
+      onChange={event => setValue4(event.target.value)}
+      />
+      <ObjectCalculator
+      value={value5} 
+      maxLength="1" 
+      onChange={event => setValue5(event.target.value)}
+      />
+      <ObjectCalculator
+      value={value6} 
+      maxLength="1" 
+      onChange={event => setValue6(event.target.value)}
+      />
+      </div>
+     </div>   
+    <p />
+  Frage 3
+     <div style={Container1}>
+      <div style = {Item1}>  
+        <div>{fragen[2]}</div>
+      </div>    
+      <div className="Item2">  
+        <ObjectCalculator
+      value={value7} 
+      maxLength="1" 
+      onChange={event => setValue7(event.target.value)}
+      />
+      <ObjectCalculator
+      value={value8} 
+      maxLength="1" 
+      onChange={event => setValue8(event.target.value)}
+      />
+      <ObjectCalculator
+      value={value9} 
+      maxLength="1" 
+      onChange={event => setValue9(event.target.value)}
+      />
+      </div>
+
+     </div> 
+  Frage 4
+     <div style={Container1}>
+      <div style = {Item1}> 
+        <div>{fragen[3]}</div>
+      </div>    
+      <div className="Item2">  
+        <ObjectCalculator
+      value={value10} 
+      maxLength="1" 
+      onChange={event => setValue10(event.target.value)}
+      />
+      <ObjectCalculator
+      value={value11} 
+      maxLength="1" 
+      onChange={event => setValue11(event.target.value)}
+      />
+      <ObjectCalculator
+      value={value12} 
+      maxLength="1" 
+      onChange={event => setValue12(event.target.value)}
+      />
+      </div>
+
+     </div> 
+  Frage 5
+     <div style={Container1}>
+      <div style = {Item1}> 
+        <div>{fragen[4]}</div>
+      </div>    
+      <div className="Item2">  
+        <ObjectCalculator
+      value={value13} 
+      maxLength="1" 
+      onChange={event => setValue13(event.target.value)}
+      />
+      <ObjectCalculator
+      value={value14} 
+      maxLength="1" 
+      onChange={event => setValue14(event.target.value)}
+      />
+      <ObjectCalculator
+      value={value15} 
+      maxLength="1" 
+      onChange={event => setValue15(event.target.value)}
+      />
+      </div>
+     </div>   
+  Frage 6
+     <div style={Container1}>
+      <div style = {Item1}> 
+        <div>{fragen[5]}</div>
+      </div>    
+      <div className="Item2">  
+        <ObjectCalculator
+      value={value16} 
+      maxLength="1" 
+      onChange={event => setValue16(event.target.value)}
+      />
+      <ObjectCalculator
+      value={value17} 
+      maxLength="1" 
+      onChange={event => setValue17(event.target.value)}
+      />
+      <ObjectCalculator
+      value={value18} 
+      maxLength="1" 
+      onChange={event => setValue18(event.target.value)}
+      />
+      </div>
+     </div> 
+  Frage 7
+     <div style={Container1}>
+      <div style = {Item1}> 
+        <div>{fragen[6]}</div>
+      </div>    
+      <div className="Item2">  
+        <ObjectCalculator
+      value={value19} 
+      maxLength="1" 
+      onChange={event => setValue19(event.target.value)}
+      />
+      <ObjectCalculator
+      value={value20} 
+      maxLength="1" 
+      onChange={event => setValue20(event.target.value)}
+      />
+      <ObjectCalculator
+      value={value21} 
+      maxLength="1" 
+      onChange={event => setValue21(event.target.value)}
+      />
+      </div>
+     </div> 
    <p>Frage 8</p>
-   <Container1>
-     <Item1>
+   <div style={Container1}>
+     <div style = {Item1}>
       <div>{fragen[7]}</div>
-    </Item1>  
-    <Item2>
+    </div>  
+    <div style={Item2}>
       <TableRowQ8to10>
         <QuestionColumn>
           {antwortenFrage8[0]}
@@ -649,14 +705,14 @@ Frage 7
         </QuestionColumn>
        <Checkbox checked={checked27} setChecked={setChecked27} inputfieldvalue={inputfieldvalue27} />
       </TableRowQ8to10>      
-  </Item2>
-  </Container1>
+  </div>
+  </div>
   <p>Frage 9</p>
-   <Container1>
-     <Item1>
+   <div style={Container1}>
+     <div style = {Item1}>
       <div>{fragen[8]}</div>
-    </Item1>  
-    <Item2>
+    </div>  
+    <div style={Item2}>
       <TableRowQ8to10>
         <QuestionColumn>
           {antwortenFrage9[0]}
@@ -693,15 +749,15 @@ Frage 7
         </QuestionColumn>
        <Checkbox checked={checked33} setChecked={setChecked33} inputfieldvalue={inputfieldvalue33} />
       </TableRowQ8to10> 
-    </Item2>
-  </Container1>
+    </div>
+  </div>
 
   <p>Frage 9</p>
-   <Container1>
-     <Item1>
+   <div style={Container1}>
+     <div style = {Item1}>
       <div>{fragen[8]}</div>
-    </Item1>  
-    <Item2>
+    </div>  
+    <div style={Item2}>
       <TableRowQ8to10>
         <QuestionColumn>
           {antwortenFrage10[0]}
@@ -738,8 +794,8 @@ Frage 7
         </QuestionColumn>
        <Checkbox checked={checked39} setChecked={setChecked39} inputfieldvalue={inputfieldvalue39} />
       </TableRowQ8to10> 
-    </Item2> 
-   </Container1> 
+    </div> 
+   </div> 
   
   <p style={roteErgebnisse}>{ergebnisRot} Das ist die Summer der Roten
   Ergebnisse</p>
@@ -754,125 +810,177 @@ Frage 7
     <p/>
     <Headline textcolor="yellowgreen">STRU</Headline><Headline textcolor="tomato">KTOG</Headline><Headline textcolor="lightblue">RAMM</Headline>
     <p/>
-    <Container1>
-      <Item1>
+    <div style={Container1}>
+      <div style = {Item1}>
           <div>{fragen[0]}</div>
-      </Item1>    
-      <Item2>  
+      </div>    
+      <div className="Item2">  
         <ObjectCalculator
-        stateQuestion1={value1}
-        setStateQuestion1={setValue1}
-        stateQuestion2={value2}
-        setStateQuestion2={setValue2}
-        stateQuestion3={value3}
-        setStateQuestion3={setValue3}
-        />
-      </Item2> 
-    </Container1>  
+      value={value1} 
+      maxLength="1" 
+      onChange={event => setValue1(event.target.value)}
+      />
+      <ObjectCalculator
+      value={value2} 
+      maxLength="1" 
+      onChange={event => setValue2(event.target.value)}
+      />
+      <ObjectCalculator
+      value={value3} 
+      maxLength="1" 
+      onChange={event => setValue3(event.target.value)}
+      />
+      </div>
+  
+    </div>  
     <p />
   Frage 2
-     <Container1>
-      <Item1> 
+     <div style={Container1}>
+      <div style = {Item1}> 
         <div>{fragen[1]}</div>
-      </Item1>    
-      <Item2> 
+      </div>    
+      <div className="Item2">  
+        <ObjectCalculator
+      value={value4} 
+      maxLength="1" 
+      onChange={event => setValue4(event.target.value)}
+      />
       <ObjectCalculator
-        stateQuestion1={value4} 
-        setStateQuestion1={setValue4}
-        stateQuestion2={value5}
-        setStateQuestion2={setValue5}
-        stateQuestion3={value6}
-        setStateQuestion3={setValue6}
-    />
-       </Item2> 
-     </Container1>   
+      value={value5} 
+      maxLength="1" 
+      onChange={event => setValue5(event.target.value)}
+      />
+      <ObjectCalculator
+      value={value6} 
+      maxLength="1" 
+      onChange={event => setValue6(event.target.value)}
+      />
+      </div>
+     </div>   
     <p />
   Frage 3
-     <Container1>
-      <Item1>  
+     <div style={Container1}>
+      <div style = {Item1}>  
         <div>{fragen[2]}</div>
-      </Item1>    
-      <Item2> 
+      </div>    
+      <div className="Item2">  
+        <ObjectCalculator
+      value={value7} 
+      maxLength="1" 
+      onChange={event => setValue7(event.target.value)}
+      />
       <ObjectCalculator
-        stateQuestion1={value7} 
-        setStateQuestion1={setValue7}
-        stateQuestion2={value8}
-        setStateQuestion2={setValue8}
-        stateQuestion3={value9}
-        setStateQuestion3={setValue9}
-    />
-     </Item2> 
-     </Container1> 
+      value={value8} 
+      maxLength="1" 
+      onChange={event => setValue8(event.target.value)}
+      />
+      <ObjectCalculator
+      value={value9} 
+      maxLength="1" 
+      onChange={event => setValue9(event.target.value)}
+      />
+      </div>
+
+     </div> 
   Frage 4
-     <Container1>
-      <Item1> 
+     <div style={Container1}>
+      <div style = {Item1}> 
         <div>{fragen[3]}</div>
-      </Item1>    
-      <Item2> 
+      </div>    
+      <div className="Item2">  
+        <ObjectCalculator
+      value={value10} 
+      maxLength="1" 
+      onChange={event => setValue10(event.target.value)}
+      />
       <ObjectCalculator
-        stateQuestion1={value10} 
-        setStateQuestion1={setValue10}
-        stateQuestion2={value11}
-        setStateQuestion2={setValue11}
-        stateQuestion3={value12}
-        setStateQuestion3={setValue12}
-    />
-       </Item2> 
-     </Container1> 
+      value={value11} 
+      maxLength="1" 
+      onChange={event => setValue11(event.target.value)}
+      />
+      <ObjectCalculator
+      value={value12} 
+      maxLength="1" 
+      onChange={event => setValue12(event.target.value)}
+      />
+      </div>
+
+     </div> 
   Frage 5
-     <Container1>
-      <Item1> 
+     <div style={Container1}>
+      <div style = {Item1}> 
         <div>{fragen[4]}</div>
-      </Item1>    
-      <Item2> 
+      </div>    
+      <div className="Item2">  
+        <ObjectCalculator
+      value={value13} 
+      maxLength="1" 
+      onChange={event => setValue13(event.target.value)}
+      />
       <ObjectCalculator
-        stateQuestion1={value13} 
-        setStateQuestion1={setValue13}
-        stateQuestion2={value14}
-        setStateQuestion2={setValue14}
-        stateQuestion3={value15}
-        setStateQuestion3={setValue15}
-    />
-       </Item2> 
-     </Container1>   
+      value={value14} 
+      maxLength="1" 
+      onChange={event => setValue14(event.target.value)}
+      />
+      <ObjectCalculator
+      value={value15} 
+      maxLength="1" 
+      onChange={event => setValue15(event.target.value)}
+      />
+      </div>
+     </div>   
   Frage 6
-     <Container1>
-      <Item1> 
+     <div style={Container1}>
+      <div style = {Item1}> 
         <div>{fragen[5]}</div>
-      </Item1>    
-      <Item2> 
+      </div>    
+      <div className="Item2">  
+        <ObjectCalculator
+      value={value16} 
+      maxLength="1" 
+      onChange={event => setValue16(event.target.value)}
+      />
       <ObjectCalculator
-        stateQuestion1={value16} 
-        setStateQuestion1={setValue16}
-        stateQuestion2={value17}
-        setStateQuestion2={setValue17}
-        stateQuestion3={value18}
-        setStateQuestion3={setValue18}
-    />
-         </Item2> 
-     </Container1> 
+      value={value17} 
+      maxLength="1" 
+      onChange={event => setValue17(event.target.value)}
+      />
+      <ObjectCalculator
+      value={value18} 
+      maxLength="1" 
+      onChange={event => setValue18(event.target.value)}
+      />
+      </div>
+     </div> 
   Frage 7
-     <Container1>
-      <Item1> 
+     <div style={Container1}>
+      <div style = {Item1}> 
         <div>{fragen[6]}</div>
-      </Item1>    
-      <Item2> 
+      </div>    
+      <div className="Item2">  
+        <ObjectCalculator
+      value={value19} 
+      maxLength="1" 
+      onChange={event => setValue19(event.target.value)}
+      />
       <ObjectCalculator
-        stateQuestion1={value19} 
-        setStateQuestion1={setValue19}
-        stateQuestion2={value20}
-        setStateQuestion2={setValue20}
-        stateQuestion3={value21}
-        setStateQuestion3={setValue21}
-    />
-         </Item2> 
-     </Container1> 
+      value={value20} 
+      maxLength="1" 
+      onChange={event => setValue20(event.target.value)}
+      />
+      <ObjectCalculator
+      value={value21} 
+      maxLength="1" 
+      onChange={event => setValue21(event.target.value)}
+      />
+      </div>
+     </div> 
      <p>Frage 8</p>
-     <Container1>
-       <Item1>
+     <div style={Container1}>
+       <div style = {Item1}>
         <div>{fragen[7]}</div>
-      </Item1>  
-      <Item2>
+      </div>  
+      <div style={Item2}>
         <TableRowQ8to10>
           <QuestionColumn>
             {antwortenFrage8[0]}
@@ -909,14 +1017,14 @@ Frage 7
           </QuestionColumn>
          <Checkbox checked={checked27} setChecked={setChecked27} inputfieldvalue={inputfieldvalue27} />
         </TableRowQ8to10>      
-    </Item2>
-    </Container1>
+    </div>
+    </div>
     <p>Frage 9</p>
-     <Container1>
-       <Item1>
+     <div style={Container1}>
+       <div style = {Item1}>
         <div>{fragen[8]}</div>
-      </Item1>  
-      <Item2>
+      </div>  
+      <div style={Item2}>
         <TableRowQ8to10>
           <QuestionColumn>
             {antwortenFrage9[0]}
@@ -953,15 +1061,15 @@ Frage 7
           </QuestionColumn>
          <Checkbox checked={checked33} setChecked={setChecked33} inputfieldvalue={inputfieldvalue33} />
         </TableRowQ8to10> 
-      </Item2>
-    </Container1>
+      </div>
+    </div>
   
     <p>Frage 9</p>
-     <Container1>
-       <Item1>
+     <div style={Container1}>
+       <div style = {Item1}>
         <div>{fragen[8]}</div>
-      </Item1>  
-      <Item2>
+      </div>  
+      <div style={Item2}>
         <TableRowQ8to10>
           <QuestionColumn>
             {antwortenFrage10[0]}
@@ -998,14 +1106,15 @@ Frage 7
           </QuestionColumn>
          <Checkbox checked={checked39} setChecked={setChecked39} inputfieldvalue={inputfieldvalue39} />
         </TableRowQ8to10> 
-      </Item2> 
-     </Container1> 
+      </div> 
+     </div> 
     <p style={roteErgebnisse}>{ergebnisRot} Das ist die Summer der Roten
     Ergebnisse</p>
     <p style={grueneErgebnisse}>{ergebnisGruen} Das ist die Summer der grünen
     Ergebnisse</p>
-    <h2>Irgendwo sind falsche Werte du Dummkopf!</h2>
-    <h3>HALTE DICH AN DIE ANGABEN!!!</h3>
+    <h2 style={Item2}>Irgendwo sind falsche Werte du Dummkopf!</h2>
+    <p />
+    <h3 style={Item2}>HALTE DICH AN DIE ANGABEN!!!</h3>
     </>
     );
   }
