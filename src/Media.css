@@ -1,7 +1,7 @@
 .Item3 {
     margin: 5px;
     width: 50%;
-    color: black;
+    color: white;
   }
 @media (max-width: 768px){
     .Item3 {width: 83%}}

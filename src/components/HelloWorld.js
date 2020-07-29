@@ -1,15 +1,7 @@
 import React, { useState } from "react";
-import { antwortenF1 } from "../api/Data.js";
-import { antwortenF2 } from "../api/Data.js";
-import { antwortenF3 } from "../api/Data.js";
-import { antwortenF4 } from "../api/Data.js";
-import { antwortenF5 } from "../api/Data.js";
-import { antwortenF6 } from "../api/Data.js";
-import { antwortenF7 } from "../api/Data.js";
-import { antwortenFrage8 } from "../api/Data.js";
-import { antwortenFrage9 } from "../api/Data.js";
-import { antwortenFrage10 } from "../api/Data.js";
+import { antwortenF1, fragenZusatz, antwortenF2, antwortenF3, antwortenF4, antwortenF5, antwortenF6, antwortenF7, antwortenFrage8, antwortenFrage9, antwortenFrage10, antwortenFrage1, antwortenFrage2, antwortenFrage3, antwortenFrage4, antwortenFrage5, antwortenFrage6, antwortenFrage7 } from "../api/Data.js";
 import { fragen } from "../api/Data.js";
+
 // import Counter from "./components/Counter";
 import ObjectCalculator from "../components/ObjectCalculator";
 // import ObjectCalculator8 from "../components/ObjectCalculator8";
@@ -452,13 +444,15 @@ const renderchart10 = (
 const Item1 = {
 color: "white",
 width: "400px",
-margin: "30px"
+margin: "30px",
+border: "solid silver 2px",
+padding: "5px"
 }
 
 const Item2 = {
   color: "white",
   width: "400px",
-  margin: "auto",
+  margin: "10px auto",
 
   }
 
@@ -490,6 +484,8 @@ font-size: 5em;
 margin-top:0.67em;
 font-weight: bold
 `;
+
+
 
 
   if ( wert && wertzwei && IndexOfInputfieldstring3 && IndexOfInputfieldstring4 && IndexOfInputfieldstring5 && IndexOfInputfieldstring6 && IndexOfInputfieldstring7 >= 0 && renderchart8 === true && renderchart9 &&renderchart10 === true) {
@@ -813,172 +809,468 @@ font-weight: bold
     <div style={Container1}>
       <div style = {Item1}>
           <div>{fragen[0]}</div>
+          <p />
+          <div style={{font: "italic"}}>{fragenZusatz[0]}</div>
       </div>    
       <div className="Item3">  
+      <div style={{display: "flex",
+            alignItems: "center",
+            border: "solid silver 2px",
+            backgroundColor: "grey",
+            justifyContent: "space-around",
+            marginBottom: "3px"}}>
+      <div style={{display: "flex",
+            alignItems: "center",
+            height: "50px",
+            margin: "5px",
+      }}>{antwortenFrage1[0]}
+      </div>
         <ObjectCalculator
       value={value1} 
       maxLength="1" 
       onChange={event => setValue1(event.target.value)}
       />
+      </div>
+      <div style={{display: "flex",
+            alignItems: "center",
+            border: "solid silver 2px",
+            backgroundColor: "grey",
+            justifyContent: "space-around",
+            marginBottom: "3px"}}>
+      <div style={{display: "flex",
+            alignItems: "center",
+            height: "50px",
+            margin: "5px",
+      }}>{antwortenFrage1[1]}
+      </div>
       <ObjectCalculator
       value={value2} 
       maxLength="1" 
       onChange={event => setValue2(event.target.value)}
       />
+      </div>
+      <div style={{display: "flex",
+            alignItems: "center",
+            border: "solid silver 2px",
+            backgroundColor: "grey",
+            justifyContent: "space-around",
+            marginBottom: "3px"}}>
+      <div style={{display: "flex",
+            alignItems: "center",
+            height: "50px",
+            margin: "5px",
+      }}>{antwortenFrage1[2]}
+      </div>
       <ObjectCalculator
       value={value3} 
       maxLength="1" 
       onChange={event => setValue3(event.target.value)}
       />
       </div>
-  
+      </div>
     </div>  
     <p />
   Frage 2
      <div style={Container1}>
       <div style = {Item1}> 
-        <div>{fragen[1]}</div>
-      </div>    
-      <div className="Item3">  
+        <div>{fragen[1]}
+        <p />
+          <div style={{font: "italic"}}>{fragenZusatz[1]}</div>
+        </div>
+      </div> 
+      <div className="Item3"> 
+      <div style={{display: "flex",
+            alignItems: "center",
+            border: "solid silver 2px",
+            backgroundColor: "grey",
+            justifyContent: "space-around",
+            marginBottom: "3px"}}>
+      <div style={{display: "flex",
+            alignItems: "center",
+            height: "50px",
+            margin: "5px",
+      }}>{antwortenFrage2[0]}
+      </div>
+       
         <ObjectCalculator
       value={value4} 
       maxLength="1" 
       onChange={event => setValue4(event.target.value)}
       />
+      </div>
+      <div style={{display: "flex",
+            alignItems: "center",
+            border: "solid silver 2px",
+            backgroundColor: "grey",
+            justifyContent: "space-around",
+            marginBottom: "3px"}}>
+      <div style={{display: "flex",
+            alignItems: "center",
+            height: "50px",
+            margin: "5px",
+      }}>{antwortenFrage2[1]}
+      </div>
       <ObjectCalculator
       value={value5} 
       maxLength="1" 
       onChange={event => setValue5(event.target.value)}
       />
+      </div>      
+      <div style={{display: "flex",
+            alignItems: "center",
+            border: "solid silver 2px",
+            backgroundColor: "grey",
+            justifyContent: "space-around",
+            marginBottom: "3px"}}>
+      <div style={{display: "flex",
+            alignItems: "center",
+            height: "50px",
+            margin: "5px",
+      }}>{antwortenFrage2[2]}
+      </div>
       <ObjectCalculator
       value={value6} 
       maxLength="1" 
       onChange={event => setValue6(event.target.value)}
       />
       </div>
+      </div>
      </div>   
     <p />
   Frage 3
      <div style={Container1}>
       <div style = {Item1}>  
-        <div>{fragen[2]}</div>
+        <div>{fragen[2]}
+        <p />
+          <div style={{font: "italic"}}>{fragenZusatz[2]}</div>
+        </div>
       </div>    
       <div className="Item3">  
+      <div style={{display: "flex",
+            alignItems: "center",
+            border: "solid silver 2px",
+            backgroundColor: "grey",
+            justifyContent: "space-around",
+            marginBottom: "3px"}}>
+      <div style={{display: "flex",
+            alignItems: "center",
+            height: "50px",
+            margin: "5px",
+      }}>{antwortenFrage3[0]}
+      </div>
         <ObjectCalculator
       value={value7} 
       maxLength="1" 
       onChange={event => setValue7(event.target.value)}
       />
+      </div>
+      <div style={{display: "flex",
+            alignItems: "center",
+            border: "solid silver 2px",
+            backgroundColor: "grey",
+            justifyContent: "space-around",
+            marginBottom: "3px"}}>
+      <div style={{display: "flex",
+            alignItems: "center",
+            height: "50px",
+            margin: "5px",
+      }}>{antwortenFrage3[1]}
+      </div>
       <ObjectCalculator
       value={value8} 
       maxLength="1" 
       onChange={event => setValue8(event.target.value)}
       />
+      </div>
+      <div style={{display: "flex",
+            alignItems: "center",
+            border: "solid silver 2px",
+            backgroundColor: "grey",
+            justifyContent: "space-around",
+            marginBottom: "3px"}}>
+      <div style={{display: "flex",
+            alignItems: "center",
+            height: "50px",
+            margin: "5px",
+      }}>{antwortenFrage3[2]}
+      </div>
       <ObjectCalculator
       value={value9} 
       maxLength="1" 
       onChange={event => setValue9(event.target.value)}
       />
       </div>
+      </div>
 
      </div> 
   Frage 4
      <div style={Container1}>
       <div style = {Item1}> 
-        <div>{fragen[3]}</div>
+        <div>{fragen[3]}
+        <p />
+          <div style={{font: "italic"}}>{fragenZusatz[3]}</div>
+        </div>
       </div>    
       <div className="Item3">  
+      <div style={{display: "flex",
+            alignItems: "center",
+            border: "solid silver 2px",
+            backgroundColor: "grey",
+            justifyContent: "space-around",
+            marginBottom: "3px"}}>
+      <div style={{display: "flex",
+            alignItems: "center",
+            height: "50px",
+            margin: "5px",
+      }}>{antwortenFrage4[0]}
+      </div>
         <ObjectCalculator
       value={value10} 
       maxLength="1" 
       onChange={event => setValue10(event.target.value)}
       />
+      </div>
+            <div style={{display: "flex",
+            alignItems: "center",
+            border: "solid silver 2px",
+            backgroundColor: "grey",
+            justifyContent: "space-around",
+            marginBottom: "3px"}}>
+      <div style={{display: "flex",
+            alignItems: "center",
+            height: "50px",
+            margin: "5px",
+      }}>{antwortenFrage4[1]}
+      </div>
       <ObjectCalculator
       value={value11} 
       maxLength="1" 
       onChange={event => setValue11(event.target.value)}
       />
+      </div>
+            <div style={{display: "flex",
+            alignItems: "center",
+            border: "solid silver 2px",
+            backgroundColor: "grey",
+            justifyContent: "space-around",
+            marginBottom: "3px"}}>
+      <div style={{display: "flex",
+            alignItems: "center",
+            height: "50px",
+            margin: "5px",
+      }}>{antwortenFrage4[2]}
+      </div>
       <ObjectCalculator
       value={value12} 
       maxLength="1" 
       onChange={event => setValue12(event.target.value)}
       />
       </div>
+      </div>
 
      </div> 
   Frage 5
      <div style={Container1}>
       <div style = {Item1}> 
-        <div>{fragen[4]}</div>
+        <div>{fragen[4]}
+        <p />
+          <div style={{font: "italic"}}>{fragenZusatz[4]}</div>
+        </div>
       </div>    
-      <div className="Item3">  
+      <div className="Item3"> 
+      <div style={{display: "flex",
+            alignItems: "center",
+            border: "solid silver 2px",
+            backgroundColor: "grey",
+            justifyContent: "space-around",
+            marginBottom: "3px"}}>
+      <div style={{display: "flex",
+            alignItems: "center",
+            height: "50px",
+            margin: "5px",
+      }}>{antwortenFrage5[0]}
+      </div> 
         <ObjectCalculator
       value={value13} 
       maxLength="1" 
       onChange={event => setValue13(event.target.value)}
       />
+      </div>
+            <div style={{display: "flex",
+            alignItems: "center",
+            border: "solid silver 2px",
+            backgroundColor: "grey",
+            justifyContent: "space-around",
+            marginBottom: "3px"}}>
+      <div style={{display: "flex",
+            alignItems: "center",
+            height: "50px",
+            margin: "5px",
+      }}>{antwortenFrage5[1]}
+      </div>
       <ObjectCalculator
       value={value14} 
       maxLength="1" 
       onChange={event => setValue14(event.target.value)}
       />
+      </div>
+            <div style={{display: "flex",
+            alignItems: "center",
+            border: "solid silver 2px",
+            backgroundColor: "grey",
+            justifyContent: "space-around",
+            marginBottom: "3px"}}>
+      <div style={{display: "flex",
+            alignItems: "center",
+            height: "50px",
+            margin: "5px",
+      }}>{antwortenFrage5[2]}
+      </div>
       <ObjectCalculator
       value={value15} 
       maxLength="1" 
       onChange={event => setValue15(event.target.value)}
       />
       </div>
+      </div>
      </div>   
   Frage 6
      <div style={Container1}>
       <div style = {Item1}> 
-        <div>{fragen[5]}</div>
+        <div>{fragen[5]}
+        <p />
+          <div style={{font: "italic"}}>{fragenZusatz[5]}</div>
+          </div>
       </div>    
-      <div className="Item3">  
+      <div className="Item3"> 
+      <div style={{display: "flex",
+            alignItems: "center",
+            border: "solid silver 2px",
+            backgroundColor: "grey",
+            justifyContent: "space-around",
+            marginBottom: "3px"}}>
+      <div style={{display: "flex",
+            alignItems: "center",
+            height: "50px",
+            margin: "5px",
+      }}>{antwortenFrage6[0]}
+      </div> 
         <ObjectCalculator
       value={value16} 
       maxLength="1" 
       onChange={event => setValue16(event.target.value)}
       />
+      </div>
+            <div style={{display: "flex",
+            alignItems: "center",
+            border: "solid silver 2px",
+            backgroundColor: "grey",
+            justifyContent: "space-around",
+            marginBottom: "3px"}}>
+      <div style={{display: "flex",
+            alignItems: "center",
+            height: "50px",
+            margin: "5px",
+      }}>{antwortenFrage6[1]}
+      </div>
       <ObjectCalculator
       value={value17} 
       maxLength="1" 
       onChange={event => setValue17(event.target.value)}
       />
+      </div>
+            <div style={{display: "flex",
+            alignItems: "center",
+            border: "solid silver 2px",
+            backgroundColor: "grey",
+            justifyContent: "space-around",
+            marginBottom: "3px"}}>
+      <div style={{display: "flex",
+            alignItems: "center",
+            height: "50px",
+            margin: "5px",
+      }}>{antwortenFrage6[2]}
+      </div>
       <ObjectCalculator
       value={value18} 
       maxLength="1" 
       onChange={event => setValue18(event.target.value)}
       />
       </div>
+      </div>
      </div> 
   Frage 7
      <div style={Container1}>
       <div style = {Item1}> 
-        <div>{fragen[6]}</div>
+        <div>{fragen[6]}
+        <p />
+          <div style={{font: "italic"}}>{fragenZusatz[6]}</div>
+          </div>
       </div>    
       <div className="Item3">  
+      <div style={{display: "flex",
+            alignItems: "center",
+            border: "solid silver 2px",
+            backgroundColor: "grey",
+            justifyContent: "space-around",
+            marginBottom: "3px"}}>
+      <div style={{display: "flex",
+            alignItems: "center",
+            height: "50px",
+            margin: "5px",
+      }}>{antwortenFrage7[0]}
+      </div>
         <ObjectCalculator
       value={value19} 
       maxLength="1" 
       onChange={event => setValue19(event.target.value)}
       />
+      </div>
+            <div style={{display: "flex",
+            alignItems: "center",
+            border: "solid silver 2px",
+            backgroundColor: "grey",
+            justifyContent: "space-around",
+            marginBottom: "3px"}}>
+      <div style={{display: "flex",
+            alignItems: "center",
+            height: "50px",
+            margin: "5px",
+      }}>{antwortenFrage7[1]}
+      </div>
       <ObjectCalculator
       value={value20} 
       maxLength="1" 
       onChange={event => setValue20(event.target.value)}
       />
+      </div>
+            <div style={{display: "flex",
+            alignItems: "center",
+            border: "solid silver 2px",
+            backgroundColor: "grey",
+            justifyContent: "space-around",
+            marginBottom: "3px"}}>
+      <div style={{display: "flex",
+            alignItems: "center",
+            height: "50px",
+            margin: "5px",
+      }}>{antwortenFrage7[2]}
+      </div>
       <ObjectCalculator
       value={value21} 
       maxLength="1" 
       onChange={event => setValue21(event.target.value)}
       />
       </div>
+      </div>
      </div> 
      <p>Frage 8</p>
      <div style={Container1}>
        <div style = {Item1}>
-        <div>{fragen[7]}</div>
+        <div>{fragen[7]}
+        <p />
+          <div style={{font: "italic"}}>{fragenZusatz[7]}</div>
+        </div>
       </div>  
       <div style={Item2}>
         <TableRowQ8to10>
@@ -1022,7 +1314,10 @@ font-weight: bold
     <p>Frage 9</p>
      <div style={Container1}>
        <div style = {Item1}>
-        <div>{fragen[8]}</div>
+        <div>{fragen[8]}
+        <p />
+          <div style={{font: "italic"}}>{fragenZusatz[8]}</div>
+        </div>
       </div>  
       <div style={Item2}>
         <TableRowQ8to10>
@@ -1067,7 +1362,10 @@ font-weight: bold
     <p>Frage 9</p>
      <div style={Container1}>
        <div style = {Item1}>
-        <div>{fragen[8]}</div>
+        <div>{fragen[9]}
+        <p />
+          <div style={{font: "italic"}}>{fragenZusatz[9]}</div>
+        </div>
       </div>  
       <div style={Item2}>
         <TableRowQ8to10>

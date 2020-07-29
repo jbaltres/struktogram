@@ -1,24 +1,11 @@
 import React from "react";
-import { antwortenFrage1 } from "../api/Data.js";
 export default function ObjectCalculator({...props}) 
 
 {
 
 return (
     <>
-    <div style={{display: "flex",
-            alignItems: "center",
-            border: "solid silver 2px",
-            backgroundColor: "grey",
-            justifyContent: "space-around",
-            marginBottom: "3px"}}>
-      <div style={{display: "flex",
-            alignItems: "center",
-            height: "50px",
-            margin: "5px",
-      }}>
-        {antwortenFrage1[1]}
-      </div>
+    
       <div style={{display:"flex",
             alignitems:"center",
             justifycontent: "center",
@@ -27,9 +14,9 @@ return (
                   height: "30px",
                   fontSize: "1.5em",
                   margin: "5px",
-                  textAlign: "center"}} {...props} ></input>
+                  textAlign: "center"}} {...props} />
       </div> 
-    </div>
+   
     </>
   );
 }
