@@ -502,7 +502,7 @@ font-weight: bold
       <div style = {Item1}>
           <div>{fragen[0]}</div>
       </div>    
-      <div className="Item2">  
+      <div className="Item3">  
         <ObjectCalculator
       value={value1} 
       maxLength="1" 
@@ -527,7 +527,7 @@ font-weight: bold
       <div style = {Item1}> 
         <div>{fragen[1]}</div>
       </div>    
-      <div className="Item2">  
+      <div className="Item3">  
         <ObjectCalculator
       value={value4} 
       maxLength="1" 
@@ -551,7 +551,7 @@ font-weight: bold
       <div style = {Item1}>  
         <div>{fragen[2]}</div>
       </div>    
-      <div className="Item2">  
+      <div className="Item3">  
         <ObjectCalculator
       value={value7} 
       maxLength="1" 
@@ -575,7 +575,7 @@ font-weight: bold
       <div style = {Item1}> 
         <div>{fragen[3]}</div>
       </div>    
-      <div className="Item2">  
+      <div className="Item3">  
         <ObjectCalculator
       value={value10} 
       maxLength="1" 
@@ -599,7 +599,7 @@ font-weight: bold
       <div style = {Item1}> 
         <div>{fragen[4]}</div>
       </div>    
-      <div className="Item2">  
+      <div className="Item3">  
         <ObjectCalculator
       value={value13} 
       maxLength="1" 
@@ -622,7 +622,7 @@ font-weight: bold
       <div style = {Item1}> 
         <div>{fragen[5]}</div>
       </div>    
-      <div className="Item2">  
+      <div className="Item3">  
         <ObjectCalculator
       value={value16} 
       maxLength="1" 
@@ -645,7 +645,7 @@ font-weight: bold
       <div style = {Item1}> 
         <div>{fragen[6]}</div>
       </div>    
-      <div className="Item2">  
+      <div className="Item3">  
         <ObjectCalculator
       value={value19} 
       maxLength="1" 
@@ -814,7 +814,7 @@ font-weight: bold
       <div style = {Item1}>
           <div>{fragen[0]}</div>
       </div>    
-      <div className="Item2">  
+      <div className="Item3">  
         <ObjectCalculator
       value={value1} 
       maxLength="1" 
@@ -839,7 +839,7 @@ font-weight: bold
       <div style = {Item1}> 
         <div>{fragen[1]}</div>
       </div>    
-      <div className="Item2">  
+      <div className="Item3">  
         <ObjectCalculator
       value={value4} 
       maxLength="1" 
@@ -863,7 +863,7 @@ font-weight: bold
       <div style = {Item1}>  
         <div>{fragen[2]}</div>
       </div>    
-      <div className="Item2">  
+      <div className="Item3">  
         <ObjectCalculator
       value={value7} 
       maxLength="1" 
@@ -887,7 +887,7 @@ font-weight: bold
       <div style = {Item1}> 
         <div>{fragen[3]}</div>
       </div>    
-      <div className="Item2">  
+      <div className="Item3">  
         <ObjectCalculator
       value={value10} 
       maxLength="1" 
@@ -911,7 +911,7 @@ font-weight: bold
       <div style = {Item1}> 
         <div>{fragen[4]}</div>
       </div>    
-      <div className="Item2">  
+      <div className="Item3">  
         <ObjectCalculator
       value={value13} 
       maxLength="1" 
@@ -934,7 +934,7 @@ font-weight: bold
       <div style = {Item1}> 
         <div>{fragen[5]}</div>
       </div>    
-      <div className="Item2">  
+      <div className="Item3">  
         <ObjectCalculator
       value={value16} 
       maxLength="1" 
@@ -957,7 +957,7 @@ font-weight: bold
       <div style = {Item1}> 
         <div>{fragen[6]}</div>
       </div>    
-      <div className="Item2">  
+      <div className="Item3">  
         <ObjectCalculator
       value={value19} 
       maxLength="1" 

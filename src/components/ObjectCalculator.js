@@ -26,6 +26,7 @@ return (
        <input style={{width: "30px",
                   height: "30px",
                   fontSize: "1.5em",
+                  margin: "5px",
                   textAlign: "center"}} {...props} ></input>
       </div> 
     </div>
