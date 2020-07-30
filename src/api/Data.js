@@ -353,3 +353,10 @@ export const antwortenF1 = [
   export const antwortenFrage8 = ["Ich *rede nicht um den heißen Brei* herum, bin nicht immer sehr diplomatisch.", "Ich kann meine Gefühle nicht gut zeigen und werde oft nicht richtig eingeschätzt.", "Ich bin sehr an Menschen interessiert, an ihrem Leben und an ihrem Lebensumständen.", "Ich liebe das Risiko und Abenteuer. Mein Motto: *Wer wagt, gewinnt!*", "Ich bin sehr empfindlich gegen Lärm, verhalte mich auch selbst meist Leise.", "Im Grunde bin ich ein Feinschmecker, denn ich liebe eine gute Küche."];
   export const antwortenFrage9 = ["Ich mag keinen Unfrieden, bin verständnisvoll und ausgleichend.", "Ich bin kurz entschlossen, langes Zögern ist nicht meine Art.", "Ich bin äußerst gewissenhaft, oft auch in Kleinigkeiten.", "Ich mache es mir oft unnötig schwer, neige zum Grübeln und Zweifeln", "Ich nehme leicht zu, auch wenn ich nicht viel esse.", "Ich brauche immer viel Bwegung, um mich richtig wohl zu fühlen."];
   export const antwortenFrage10 = ["Bei den meisten Gelegenheiten, schaue ich lieber nur zu als mitzumachen.", "Ich werde richtig wütend, wenn ich auf etwas warten muss.", "Wenn ich mich angegriffen fühle, reagiere ich oft heftig und aggressiv.", "Ich mache gern alles mit: Ich will kein Spielverderber sein.", "Ich bilde mir zwar meine eigene Meinung, halte mich aber meist damit zurück.", "Bei Entscheidungen richte ich mich gern nach der Meinung von anderen."]; 
+
+  export const handlungsbeschreibung11 = "Die Antwort die am häufigsten zutrifft oder Sie am ehesten charackterisiert, bekommt ein +"
+  export const handlungsbeschreibung12 = "Die Antwort die am seltensten zutrifft oder Ihrem typischen Verhalten am fernsten liegt, bekommt ein -"
+  export const handlungsbeschreibung13 = "Die Antwort die leer bleibt, bekommt eine 0 (null)"
+  export const handlungsbeschreibung14 = "Wenn Sie ein + ein - und eine 0 eingetragen haben, können Sie zur nächstenn Aufgabe übergehen"
+
+  export const handlungsbeschreibung2 = "Haken sie die drei Aussagen an, die am besten auf Sie zutreffen (Kästchen anklicken/ antippen)"

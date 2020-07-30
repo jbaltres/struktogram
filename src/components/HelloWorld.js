@@ -1,7 +1,6 @@
 import React, { useState } from "react";
-import { antwortenF1, fragenZusatz, antwortenF2, antwortenF3, antwortenF4, antwortenF5, antwortenF6, antwortenF7, antwortenFrage8, antwortenFrage9, antwortenFrage10, antwortenFrage1, antwortenFrage2, antwortenFrage3, antwortenFrage4, antwortenFrage5, antwortenFrage6, antwortenFrage7 } from "../api/Data.js";
+import { antwortenF1, fragenZusatz, antwortenF2, antwortenF3, antwortenF4, antwortenF5, antwortenF6, antwortenF7, antwortenFrage8, antwortenFrage9, antwortenFrage10, antwortenFrage1, antwortenFrage2, antwortenFrage3, antwortenFrage4, antwortenFrage5, antwortenFrage6, antwortenFrage7, handlungsbeschreibung11, handlungsbeschreibung12, handlungsbeschreibung13, handlungsbeschreibung14, handlungsbeschreibung2 } from "../api/Data.js";
 import { fragen } from "../api/Data.js";
-
 // import Counter from "./components/Counter";
 import ObjectCalculator from "../components/ObjectCalculator";
 // import ObjectCalculator8 from "../components/ObjectCalculator8";
@@ -449,6 +448,20 @@ border: "solid silver 2px",
 padding: "5px"
 }
 
+const Item11 = {
+  color: "white",
+  margin: "30px",
+  border: "solid silver 2px",
+  padding: "5px",
+  textAlign: "start"
+  }
+
+  const Item12 = {
+    color: "white",
+    margin: "30px",
+    padding: "5px", 
+    }
+
 const Item2 = {
   color: "white",
   width: "400px",
@@ -477,9 +490,9 @@ padding: 5px;
 
 const Headline = styled.span`
 color :${props => props.textcolor};
-font-size: 5em;
+font-size: 2.3em;
 @media (max-width: 700px){
-  font-size: 2em
+  font-size: 1.3em
 }
 margin-top:0.67em;
 font-weight: bold
@@ -804,13 +817,43 @@ font-weight: bold
   return (
     <>
     <p/>
-    <Headline textcolor="yellowgreen">STRU</Headline><Headline textcolor="tomato">KTOG</Headline><Headline textcolor="lightblue">RAMM</Headline>
+    <h1><Headline textcolor="yellowgreen">STRU</Headline><Headline textcolor="tomato">KTOG</Headline><Headline textcolor="lightblue">RAMM</Headline></h1>
     <p/>
+    <div style={Item11}>
+      Das Struktogramm dient zur Persönlichkeitsanalyse
+      <p />
+      Um den Test erfolgreich durchzuführen, müssen folgende Regeln eingehalten werdne. 
+      <ol>
+        <li>Lies die Aufgabe</li>
+        <li>Lies die Beschreibung zur Durchführung</li>
+        <li>Fülle die Felder laut Beschreibung aus</li>
+      </ol>
+      <h3>Achtung!!!
+        <p/>
+        Füllst Du die Felder nicht wie beschrieben aus, wird dich ein Text am Ende des Tests darauf hinweisen. Dieser wird nicht nett sein!
+        <p/>
+        Jede weitere Einleitung kommt durch Femki ♥
+      </h3>
+    </div>
+    <div style={Item12}>
+    Frage 1:
+    </div>
     <div style={Container1}>
       <div style = {Item1}>
           <div>{fragen[0]}</div>
           <p />
           <div style={{font: "italic"}}>{fragenZusatz[0]}</div>
+          <p/>
+          <br/>
+          <br/>
+          <br/>
+          {handlungsbeschreibung11}
+          <p/>
+          {handlungsbeschreibung12}
+          <p/>
+          {handlungsbeschreibung13}
+          <p/>
+          {handlungsbeschreibung14}
       </div>    
       <div className="Item3">  
       <div style={{display: "flex",
@@ -870,7 +913,9 @@ font-weight: bold
       </div>
     </div>  
     <p />
+    <div style={Item12}>
   Frage 2
+  </div>
      <div style={Container1}>
       <div style = {Item1}> 
         <div>{fragen[1]}
@@ -937,7 +982,9 @@ font-weight: bold
       </div>
      </div>   
     <p />
-  Frage 3
+    <div style={Item12}>
+      Frage 3
+    </div>  
      <div style={Container1}>
       <div style = {Item1}>  
         <div>{fragen[2]}
@@ -1003,7 +1050,9 @@ font-weight: bold
       </div>
 
      </div> 
-  Frage 4
+     <div style={Item12}>
+      Frage 4
+    </div>  
      <div style={Container1}>
       <div style = {Item1}> 
         <div>{fragen[3]}
@@ -1069,7 +1118,9 @@ font-weight: bold
       </div>
 
      </div> 
-  Frage 5
+     <div style={Item12}>
+      Frage 5
+     </div> 
      <div style={Container1}>
       <div style = {Item1}> 
         <div>{fragen[4]}
@@ -1134,7 +1185,9 @@ font-weight: bold
       </div>
       </div>
      </div>   
-  Frage 6
+     <div style={Item12}>
+       Frage 6
+     </div>  
      <div style={Container1}>
       <div style = {Item1}> 
         <div>{fragen[5]}
@@ -1199,7 +1252,9 @@ font-weight: bold
       </div>
       </div>
      </div> 
-  Frage 7
+     <div style={Item12}>
+      Frage 7
+     </div>
      <div style={Container1}>
       <div style = {Item1}> 
         <div>{fragen[6]}
@@ -1264,7 +1319,11 @@ font-weight: bold
       </div>
       </div>
      </div> 
+     <div style={Item12}>
      <p>Frage 8</p>
+     
+     {handlungsbeschreibung2}
+     </div>
      <div style={Container1}>
        <div style = {Item1}>
         <div>{fragen[7]}
