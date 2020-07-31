@@ -464,7 +464,6 @@ const Item11 = {
 
 const Item2 = {
   color: "white",
-  width: "400px",
   margin: "10px auto",
 
   }
@@ -505,318 +504,6 @@ font-weight: bold
   return (
   <>
   <p/>
-  <Headline textcolor="yellowgreen">STRU</Headline><Headline textcolor="tomato">KTOG</Headline><Headline textcolor="lightblue">RAMM</Headline>
-  <p/>
-  <div style={Container1}>
-      <div style = {Item1}>
-          <div>{fragen[0]}</div>
-      </div>    
-      <div className="Item3">  
-        <ObjectCalculator
-      value={value1} 
-      maxLength="1" 
-      onChange={event => setValue1(event.target.value)}
-      />
-      <ObjectCalculator
-      value={value2} 
-      maxLength="1" 
-      onChange={event => setValue2(event.target.value)}
-      />
-      <ObjectCalculator
-      value={value3} 
-      maxLength="1" 
-      onChange={event => setValue3(event.target.value)}
-      />
-      </div>
-  
-    </div>  
-    <p />
-  Frage 2
-     <div style={Container1}>
-      <div style = {Item1}> 
-        <div>{fragen[1]}</div>
-      </div>    
-      <div className="Item3">  
-        <ObjectCalculator
-      value={value4} 
-      maxLength="1" 
-      onChange={event => setValue4(event.target.value)}
-      />
-      <ObjectCalculator
-      value={value5} 
-      maxLength="1" 
-      onChange={event => setValue5(event.target.value)}
-      />
-      <ObjectCalculator
-      value={value6} 
-      maxLength="1" 
-      onChange={event => setValue6(event.target.value)}
-      />
-      </div>
-     </div>   
-    <p />
-  Frage 3
-     <div style={Container1}>
-      <div style = {Item1}>  
-        <div>{fragen[2]}</div>
-      </div>    
-      <div className="Item3">  
-        <ObjectCalculator
-      value={value7} 
-      maxLength="1" 
-      onChange={event => setValue7(event.target.value)}
-      />
-      <ObjectCalculator
-      value={value8} 
-      maxLength="1" 
-      onChange={event => setValue8(event.target.value)}
-      />
-      <ObjectCalculator
-      value={value9} 
-      maxLength="1" 
-      onChange={event => setValue9(event.target.value)}
-      />
-      </div>
-
-     </div> 
-  Frage 4
-     <div style={Container1}>
-      <div style = {Item1}> 
-        <div>{fragen[3]}</div>
-      </div>    
-      <div className="Item3">  
-        <ObjectCalculator
-      value={value10} 
-      maxLength="1" 
-      onChange={event => setValue10(event.target.value)}
-      />
-      <ObjectCalculator
-      value={value11} 
-      maxLength="1" 
-      onChange={event => setValue11(event.target.value)}
-      />
-      <ObjectCalculator
-      value={value12} 
-      maxLength="1" 
-      onChange={event => setValue12(event.target.value)}
-      />
-      </div>
-
-     </div> 
-  Frage 5
-     <div style={Container1}>
-      <div style = {Item1}> 
-        <div>{fragen[4]}</div>
-      </div>    
-      <div className="Item3">  
-        <ObjectCalculator
-      value={value13} 
-      maxLength="1" 
-      onChange={event => setValue13(event.target.value)}
-      />
-      <ObjectCalculator
-      value={value14} 
-      maxLength="1" 
-      onChange={event => setValue14(event.target.value)}
-      />
-      <ObjectCalculator
-      value={value15} 
-      maxLength="1" 
-      onChange={event => setValue15(event.target.value)}
-      />
-      </div>
-     </div>   
-  Frage 6
-     <div style={Container1}>
-      <div style = {Item1}> 
-        <div>{fragen[5]}</div>
-      </div>    
-      <div className="Item3">  
-        <ObjectCalculator
-      value={value16} 
-      maxLength="1" 
-      onChange={event => setValue16(event.target.value)}
-      />
-      <ObjectCalculator
-      value={value17} 
-      maxLength="1" 
-      onChange={event => setValue17(event.target.value)}
-      />
-      <ObjectCalculator
-      value={value18} 
-      maxLength="1" 
-      onChange={event => setValue18(event.target.value)}
-      />
-      </div>
-     </div> 
-  Frage 7
-     <div style={Container1}>
-      <div style = {Item1}> 
-        <div>{fragen[6]}</div>
-      </div>    
-      <div className="Item3">  
-        <ObjectCalculator
-      value={value19} 
-      maxLength="1" 
-      onChange={event => setValue19(event.target.value)}
-      />
-      <ObjectCalculator
-      value={value20} 
-      maxLength="1" 
-      onChange={event => setValue20(event.target.value)}
-      />
-      <ObjectCalculator
-      value={value21} 
-      maxLength="1" 
-      onChange={event => setValue21(event.target.value)}
-      />
-      </div>
-     </div> 
-   <p>Frage 8</p>
-   <div style={Container1}>
-     <div style = {Item1}>
-      <div>{fragen[7]}</div>
-    </div>  
-    <div style={Item2}>
-      <TableRowQ8to10>
-        <QuestionColumn>
-          {antwortenFrage8[0]}
-        </QuestionColumn>
-       <Checkbox checked={checked22} setChecked={setChecked22} inputfieldvalue={inputfieldvalue22} />
-      </TableRowQ8to10>
-      <TableRowQ8to10>
-        <QuestionColumn>
-          {antwortenFrage8[1]}
-        </QuestionColumn>
-       <Checkbox checked={checked23} setChecked={setChecked23} inputfieldvalue={inputfieldvalue23} />
-      </TableRowQ8to10>
-      <TableRowQ8to10>
-        <QuestionColumn>
-          {antwortenFrage8[2]}
-        </QuestionColumn>
-       <Checkbox checked={checked24} setChecked={setChecked24} inputfieldvalue={inputfieldvalue24} />
-      </TableRowQ8to10>
-      <TableRowQ8to10>
-        <QuestionColumn>
-          {antwortenFrage8[3]}
-        </QuestionColumn>
-       <Checkbox checked={checked25} setChecked={setChecked25} inputfieldvalue={inputfieldvalue25} />
-      </TableRowQ8to10>
-      <TableRowQ8to10>
-        <QuestionColumn>
-          {antwortenFrage8[4]}
-        </QuestionColumn>
-       <Checkbox checked={checked26} setChecked={setChecked26} inputfieldvalue={inputfieldvalue26} />
-      </TableRowQ8to10>
-      <TableRowQ8to10>
-        <QuestionColumn>
-          {antwortenFrage8[5]}
-        </QuestionColumn>
-       <Checkbox checked={checked27} setChecked={setChecked27} inputfieldvalue={inputfieldvalue27} />
-      </TableRowQ8to10>      
-  </div>
-  </div>
-  <p>Frage 9</p>
-   <div style={Container1}>
-     <div style = {Item1}>
-      <div>{fragen[8]}</div>
-    </div>  
-    <div style={Item2}>
-      <TableRowQ8to10>
-        <QuestionColumn>
-          {antwortenFrage9[0]}
-        </QuestionColumn>
-       <Checkbox checked={checked28} setChecked={setChecked28} inputfieldvalue={inputfieldvalue28} />
-      </TableRowQ8to10> 
-      <TableRowQ8to10>
-        <QuestionColumn>
-          {antwortenFrage9[1]}
-        </QuestionColumn>
-       <Checkbox checked={checked29} setChecked={setChecked29} inputfieldvalue={inputfieldvalue29} />
-      </TableRowQ8to10> 
-      <TableRowQ8to10>
-        <QuestionColumn>
-          {antwortenFrage9[2]}
-        </QuestionColumn>
-       <Checkbox checked={checked30} setChecked={setChecked30} inputfieldvalue={inputfieldvalue30} />
-      </TableRowQ8to10> 
-      <TableRowQ8to10>
-        <QuestionColumn>
-          {antwortenFrage9[3]}
-        </QuestionColumn>
-       <Checkbox checked={checked31} setChecked={setChecked31} inputfieldvalue={inputfieldvalue31} />
-      </TableRowQ8to10> 
-      <TableRowQ8to10>
-        <QuestionColumn>
-          {antwortenFrage9[4]}
-        </QuestionColumn>
-       <Checkbox checked={checked32} setChecked={setChecked32} inputfieldvalue={inputfieldvalue32} />
-      </TableRowQ8to10> 
-      <TableRowQ8to10>
-        <QuestionColumn>
-          {antwortenFrage9[5]}
-        </QuestionColumn>
-       <Checkbox checked={checked33} setChecked={setChecked33} inputfieldvalue={inputfieldvalue33} />
-      </TableRowQ8to10> 
-    </div>
-  </div>
-
-  <p>Frage 9</p>
-   <div style={Container1}>
-     <div style = {Item1}>
-      <div>{fragen[8]}</div>
-    </div>  
-    <div style={Item2}>
-      <TableRowQ8to10>
-        <QuestionColumn>
-          {antwortenFrage10[0]}
-        </QuestionColumn>
-       <Checkbox checked={checked34} setChecked={setChecked34} inputfieldvalue={inputfieldvalue34} />
-      </TableRowQ8to10> 
-      <TableRowQ8to10>
-        <QuestionColumn>
-          {antwortenFrage10[1]}
-        </QuestionColumn>
-       <Checkbox checked={checked35} setChecked={setChecked35} inputfieldvalue={inputfieldvalue35} />
-      </TableRowQ8to10> 
-      <TableRowQ8to10>
-        <QuestionColumn>
-          {antwortenFrage10[2]}
-        </QuestionColumn>
-       <Checkbox checked={checked36} setChecked={setChecked36} inputfieldvalue={inputfieldvalue36} />
-      </TableRowQ8to10> 
-      <TableRowQ8to10>
-        <QuestionColumn>
-          {antwortenFrage10[3]}
-        </QuestionColumn>
-       <Checkbox checked={checked37} setChecked={setChecked37} inputfieldvalue={inputfieldvalue37} />
-      </TableRowQ8to10> 
-      <TableRowQ8to10>
-      <QuestionColumn>
-        {antwortenFrage10[4]}
-      </QuestionColumn>
-     <Checkbox checked={checked38} setChecked={setChecked38} inputfieldvalue={inputfieldvalue38} />
-    </TableRowQ8to10> 
-    <TableRowQ8to10>
-        <QuestionColumn>
-          {antwortenFrage10[5]}
-        </QuestionColumn>
-       <Checkbox checked={checked39} setChecked={setChecked39} inputfieldvalue={inputfieldvalue39} />
-      </TableRowQ8to10> 
-    </div> 
-   </div> 
-  
-  <p style={roteErgebnisse}>{ergebnisRot} Das ist die Summer der Roten
-  Ergebnisse</p>
-  <p style={grueneErgebnisse}>{ergebnisGruen} Das ist die Summer der grünen
-  Ergebnisse</p>
-  <PieChart iVR={ergebnisRot} iGR={ergebnisGruen}/>
-  </>
-  );
-  }
-  return (
-    <>
-    <p/>
     <h1><Headline textcolor="yellowgreen">STRU</Headline><Headline textcolor="tomato">KTOG</Headline><Headline textcolor="lightblue">RAMM</Headline></h1>
     <p/>
     <div style={Item11}>
@@ -864,7 +551,6 @@ font-weight: bold
             marginBottom: "3px"}}>
       <div style={{display: "flex",
             alignItems: "center",
-            height: "50px",
             margin: "5px",
       }}>{antwortenFrage1[0]}
       </div>
@@ -882,7 +568,6 @@ font-weight: bold
             marginBottom: "3px"}}>
       <div style={{display: "flex",
             alignItems: "center",
-            height: "50px",
             margin: "5px",
       }}>{antwortenFrage1[1]}
       </div>
@@ -900,7 +585,6 @@ font-weight: bold
             marginBottom: "3px"}}>
       <div style={{display: "flex",
             alignItems: "center",
-            height: "50px",
             margin: "5px",
       }}>{antwortenFrage1[2]}
       </div>
@@ -932,7 +616,6 @@ font-weight: bold
             marginBottom: "3px"}}>
       <div style={{display: "flex",
             alignItems: "center",
-            height: "50px",
             margin: "5px",
       }}>{antwortenFrage2[0]}
       </div>
@@ -951,7 +634,6 @@ font-weight: bold
             marginBottom: "3px"}}>
       <div style={{display: "flex",
             alignItems: "center",
-            height: "50px",
             margin: "5px",
       }}>{antwortenFrage2[1]}
       </div>
@@ -969,7 +651,6 @@ font-weight: bold
             marginBottom: "3px"}}>
       <div style={{display: "flex",
             alignItems: "center",
-            height: "50px",
             margin: "5px",
       }}>{antwortenFrage2[2]}
       </div>
@@ -1001,7 +682,6 @@ font-weight: bold
             marginBottom: "3px"}}>
       <div style={{display: "flex",
             alignItems: "center",
-            height: "50px",
             margin: "5px",
       }}>{antwortenFrage3[0]}
       </div>
@@ -1019,7 +699,6 @@ font-weight: bold
             marginBottom: "3px"}}>
       <div style={{display: "flex",
             alignItems: "center",
-            height: "50px",
             margin: "5px",
       }}>{antwortenFrage3[1]}
       </div>
@@ -1037,7 +716,6 @@ font-weight: bold
             marginBottom: "3px"}}>
       <div style={{display: "flex",
             alignItems: "center",
-            height: "50px",
             margin: "5px",
       }}>{antwortenFrage3[2]}
       </div>
@@ -1069,7 +747,6 @@ font-weight: bold
             marginBottom: "3px"}}>
       <div style={{display: "flex",
             alignItems: "center",
-            height: "50px",
             margin: "5px",
       }}>{antwortenFrage4[0]}
       </div>
@@ -1087,7 +764,6 @@ font-weight: bold
             marginBottom: "3px"}}>
       <div style={{display: "flex",
             alignItems: "center",
-            height: "50px",
             margin: "5px",
       }}>{antwortenFrage4[1]}
       </div>
@@ -1105,7 +781,6 @@ font-weight: bold
             marginBottom: "3px"}}>
       <div style={{display: "flex",
             alignItems: "center",
-            height: "50px",
             margin: "5px",
       }}>{antwortenFrage4[2]}
       </div>
@@ -1137,7 +812,6 @@ font-weight: bold
             marginBottom: "3px"}}>
       <div style={{display: "flex",
             alignItems: "center",
-            height: "50px",
             margin: "5px",
       }}>{antwortenFrage5[0]}
       </div> 
@@ -1155,7 +829,6 @@ font-weight: bold
             marginBottom: "3px"}}>
       <div style={{display: "flex",
             alignItems: "center",
-            height: "50px",
             margin: "5px",
       }}>{antwortenFrage5[1]}
       </div>
@@ -1173,7 +846,6 @@ font-weight: bold
             marginBottom: "3px"}}>
       <div style={{display: "flex",
             alignItems: "center",
-            height: "50px",
             margin: "5px",
       }}>{antwortenFrage5[2]}
       </div>
@@ -1204,7 +876,6 @@ font-weight: bold
             marginBottom: "3px"}}>
       <div style={{display: "flex",
             alignItems: "center",
-            height: "50px",
             margin: "5px",
       }}>{antwortenFrage6[0]}
       </div> 
@@ -1222,7 +893,6 @@ font-weight: bold
             marginBottom: "3px"}}>
       <div style={{display: "flex",
             alignItems: "center",
-            height: "50px",
             margin: "5px",
       }}>{antwortenFrage6[1]}
       </div>
@@ -1240,7 +910,6 @@ font-weight: bold
             marginBottom: "3px"}}>
       <div style={{display: "flex",
             alignItems: "center",
-            height: "50px",
             margin: "5px",
       }}>{antwortenFrage6[2]}
       </div>
@@ -1271,7 +940,6 @@ font-weight: bold
             marginBottom: "3px"}}>
       <div style={{display: "flex",
             alignItems: "center",
-            height: "50px",
             margin: "5px",
       }}>{antwortenFrage7[0]}
       </div>
@@ -1289,7 +957,6 @@ font-weight: bold
             marginBottom: "3px"}}>
       <div style={{display: "flex",
             alignItems: "center",
-            height: "50px",
             margin: "5px",
       }}>{antwortenFrage7[1]}
       </div>
@@ -1307,7 +974,6 @@ font-weight: bold
             marginBottom: "3px"}}>
       <div style={{display: "flex",
             alignItems: "center",
-            height: "50px",
             margin: "5px",
       }}>{antwortenFrage7[2]}
       </div>
@@ -1370,7 +1036,7 @@ font-weight: bold
         </TableRowQ8to10>      
     </div>
     </div>
-    <p>Frage 9</p>
+    <p style={Item12}>Frage 9</p>
      <div style={Container1}>
        <div style = {Item1}>
         <div>{fragen[8]}
@@ -1418,7 +1084,651 @@ font-weight: bold
       </div>
     </div>
   
-    <p>Frage 9</p>
+    <p style={Item12}>Frage 10</p>
+     <div style={Container1}>
+       <div style = {Item1}>
+        <div>{fragen[9]}
+        <p />
+          <div style={{font: "italic"}}>{fragenZusatz[9]}</div>
+        </div>
+      </div>  
+      <div style={Item2}>
+        <TableRowQ8to10>
+          <QuestionColumn>
+            {antwortenFrage10[0]}
+          </QuestionColumn>
+         <Checkbox checked={checked34} setChecked={setChecked34} inputfieldvalue={inputfieldvalue34} />
+        </TableRowQ8to10> 
+        <TableRowQ8to10>
+          <QuestionColumn>
+            {antwortenFrage10[1]}
+          </QuestionColumn>
+         <Checkbox checked={checked35} setChecked={setChecked35} inputfieldvalue={inputfieldvalue35} />
+        </TableRowQ8to10> 
+        <TableRowQ8to10>
+          <QuestionColumn>
+            {antwortenFrage10[2]}
+          </QuestionColumn>
+         <Checkbox checked={checked36} setChecked={setChecked36} inputfieldvalue={inputfieldvalue36} />
+        </TableRowQ8to10> 
+        <TableRowQ8to10>
+          <QuestionColumn>
+            {antwortenFrage10[3]}
+          </QuestionColumn>
+         <Checkbox checked={checked37} setChecked={setChecked37} inputfieldvalue={inputfieldvalue37} />
+        </TableRowQ8to10> 
+        <TableRowQ8to10>
+        <QuestionColumn>
+          {antwortenFrage10[4]}
+        </QuestionColumn>
+       <Checkbox checked={checked38} setChecked={setChecked38} inputfieldvalue={inputfieldvalue38} />
+      </TableRowQ8to10> 
+      <TableRowQ8to10>
+          <QuestionColumn>
+            {antwortenFrage10[5]}
+          </QuestionColumn>
+         <Checkbox checked={checked39} setChecked={setChecked39} inputfieldvalue={inputfieldvalue39} />
+        </TableRowQ8to10> 
+      </div> 
+     </div> 
+  
+  <p style={roteErgebnisse}>{ergebnisRot} Das ist die Summer der Roten
+  Ergebnisse</p>
+  <p style={grueneErgebnisse}>{ergebnisGruen} Das ist die Summer der grünen
+  Ergebnisse</p>
+  <br/>
+  <br/>
+  <h3 style={Item12}>Dies ist dein persönliches Struktogram Ergebnis</h3>
+  <PieChart iVR={ergebnisRot} iGR={ergebnisGruen}/>
+  <br/>
+  <br/>
+  </>
+  );
+  }
+  return (
+    <>
+    <p/>
+    <h1><Headline textcolor="yellowgreen">STRU</Headline><Headline textcolor="tomato">KTOG</Headline><Headline textcolor="lightblue">RAMM</Headline></h1>
+    <p/>
+    <div style={Item11}>
+      Das Struktogramm dient zur Persönlichkeitsanalyse
+      <p />
+      Um den Test erfolgreich durchzuführen, müssen folgende Regeln eingehalten werdne. 
+      <ol>
+        <li>Lies die Aufgabe</li>
+        <li>Lies die Beschreibung zur Durchführung</li>
+        <li>Fülle die Felder laut Beschreibung aus</li>
+      </ol>
+      <h3>Achtung!!!
+        <p/>
+        Füllst Du die Felder nicht wie beschrieben aus, wird dich ein Text am Ende des Tests darauf hinweisen. Dieser wird nicht nett sein!
+        <p/>
+        Jede weitere Einleitung kommt durch Femki ♥
+      </h3>
+    </div>
+    <div style={Item12}>
+    Frage 1:
+    </div>
+    <div style={Container1}>
+      <div style = {Item1}>
+          <div>{fragen[0]}</div>
+          <p />
+          <div style={{font: "italic"}}>{fragenZusatz[0]}</div>
+          <p/>
+          <br/>
+          <br/>
+          <br/>
+          {handlungsbeschreibung11}
+          <p/>
+          {handlungsbeschreibung12}
+          <p/>
+          {handlungsbeschreibung13}
+          <p/>
+          {handlungsbeschreibung14}
+      </div>    
+      <div className="Item3">  
+      <div style={{display: "flex",
+            alignItems: "center",
+            border: "solid silver 2px",
+            backgroundColor: "grey",
+            justifyContent: "space-around",
+            marginBottom: "3px"}}>
+      <div style={{display: "flex",
+            alignItems: "center",
+            margin: "5px",
+      }}>{antwortenFrage1[0]}
+      </div>
+        <ObjectCalculator
+      value={value1} 
+      maxLength="1" 
+      onChange={event => setValue1(event.target.value)}
+      />
+      </div>
+      <div style={{display: "flex",
+            alignItems: "center",
+            border: "solid silver 2px",
+            backgroundColor: "grey",
+            justifyContent: "space-around",
+            marginBottom: "3px"}}>
+      <div style={{display: "flex",
+            alignItems: "center",
+            margin: "5px",
+      }}>{antwortenFrage1[1]}
+      </div>
+      <ObjectCalculator
+      value={value2} 
+      maxLength="1" 
+      onChange={event => setValue2(event.target.value)}
+      />
+      </div>
+      <div style={{display: "flex",
+            alignItems: "center",
+            border: "solid silver 2px",
+            backgroundColor: "grey",
+            justifyContent: "space-around",
+            marginBottom: "3px"}}>
+      <div style={{display: "flex",
+            alignItems: "center",
+            margin: "5px",
+      }}>{antwortenFrage1[2]}
+      </div>
+      <ObjectCalculator
+      value={value3} 
+      maxLength="1" 
+      onChange={event => setValue3(event.target.value)}
+      />
+      </div>
+      </div>
+    </div>  
+    <p />
+    <div style={Item12}>
+  Frage 2
+  </div>
+     <div style={Container1}>
+      <div style = {Item1}> 
+        <div>{fragen[1]}
+        <p />
+          <div style={{font: "italic"}}>{fragenZusatz[1]}</div>
+        </div>
+      </div> 
+      <div className="Item3"> 
+      <div style={{display: "flex",
+            alignItems: "center",
+            border: "solid silver 2px",
+            backgroundColor: "grey",
+            justifyContent: "space-around",
+            marginBottom: "3px"}}>
+      <div style={{display: "flex",
+            alignItems: "center",
+            margin: "5px",
+      }}>{antwortenFrage2[0]}
+      </div>
+       
+        <ObjectCalculator
+      value={value4} 
+      maxLength="1" 
+      onChange={event => setValue4(event.target.value)}
+      />
+      </div>
+      <div style={{display: "flex",
+            alignItems: "center",
+            border: "solid silver 2px",
+            backgroundColor: "grey",
+            justifyContent: "space-around",
+            marginBottom: "3px"}}>
+      <div style={{display: "flex",
+            alignItems: "center",
+            margin: "5px",
+      }}>{antwortenFrage2[1]}
+      </div>
+      <ObjectCalculator
+      value={value5} 
+      maxLength="1" 
+      onChange={event => setValue5(event.target.value)}
+      />
+      </div>      
+      <div style={{display: "flex",
+            alignItems: "center",
+            border: "solid silver 2px",
+            backgroundColor: "grey",
+            justifyContent: "space-around",
+            marginBottom: "3px"}}>
+      <div style={{display: "flex",
+            alignItems: "center",
+            margin: "5px",
+      }}>{antwortenFrage2[2]}
+      </div>
+      <ObjectCalculator
+      value={value6} 
+      maxLength="1" 
+      onChange={event => setValue6(event.target.value)}
+      />
+      </div>
+      </div>
+     </div>   
+    <p />
+    <div style={Item12}>
+      Frage 3
+    </div>  
+     <div style={Container1}>
+      <div style = {Item1}>  
+        <div>{fragen[2]}
+        <p />
+          <div style={{font: "italic"}}>{fragenZusatz[2]}</div>
+        </div>
+      </div>    
+      <div className="Item3">  
+      <div style={{display: "flex",
+            alignItems: "center",
+            border: "solid silver 2px",
+            backgroundColor: "grey",
+            justifyContent: "space-around",
+            marginBottom: "3px"}}>
+      <div style={{display: "flex",
+            alignItems: "center",
+            margin: "5px",
+      }}>{antwortenFrage3[0]}
+      </div>
+        <ObjectCalculator
+      value={value7} 
+      maxLength="1" 
+      onChange={event => setValue7(event.target.value)}
+      />
+      </div>
+      <div style={{display: "flex",
+            alignItems: "center",
+            border: "solid silver 2px",
+            backgroundColor: "grey",
+            justifyContent: "space-around",
+            marginBottom: "3px"}}>
+      <div style={{display: "flex",
+            alignItems: "center",
+            margin: "5px",
+      }}>{antwortenFrage3[1]}
+      </div>
+      <ObjectCalculator
+      value={value8} 
+      maxLength="1" 
+      onChange={event => setValue8(event.target.value)}
+      />
+      </div>
+      <div style={{display: "flex",
+            alignItems: "center",
+            border: "solid silver 2px",
+            backgroundColor: "grey",
+            justifyContent: "space-around",
+            marginBottom: "3px"}}>
+      <div style={{display: "flex",
+            alignItems: "center",
+            margin: "5px",
+      }}>{antwortenFrage3[2]}
+      </div>
+      <ObjectCalculator
+      value={value9} 
+      maxLength="1" 
+      onChange={event => setValue9(event.target.value)}
+      />
+      </div>
+      </div>
+
+     </div> 
+     <div style={Item12}>
+      Frage 4
+    </div>  
+     <div style={Container1}>
+      <div style = {Item1}> 
+        <div>{fragen[3]}
+        <p />
+          <div style={{font: "italic"}}>{fragenZusatz[3]}</div>
+        </div>
+      </div>    
+      <div className="Item3">  
+      <div style={{display: "flex",
+            alignItems: "center",
+            border: "solid silver 2px",
+            backgroundColor: "grey",
+            justifyContent: "space-around",
+            marginBottom: "3px"}}>
+      <div style={{display: "flex",
+            alignItems: "center",
+            margin: "5px",
+      }}>{antwortenFrage4[0]}
+      </div>
+        <ObjectCalculator
+      value={value10} 
+      maxLength="1" 
+      onChange={event => setValue10(event.target.value)}
+      />
+      </div>
+            <div style={{display: "flex",
+            alignItems: "center",
+            border: "solid silver 2px",
+            backgroundColor: "grey",
+            justifyContent: "space-around",
+            marginBottom: "3px"}}>
+      <div style={{display: "flex",
+            alignItems: "center",
+            margin: "5px",
+      }}>{antwortenFrage4[1]}
+      </div>
+      <ObjectCalculator
+      value={value11} 
+      maxLength="1" 
+      onChange={event => setValue11(event.target.value)}
+      />
+      </div>
+            <div style={{display: "flex",
+            alignItems: "center",
+            border: "solid silver 2px",
+            backgroundColor: "grey",
+            justifyContent: "space-around",
+            marginBottom: "3px"}}>
+      <div style={{display: "flex",
+            alignItems: "center",
+            margin: "5px",
+      }}>{antwortenFrage4[2]}
+      </div>
+      <ObjectCalculator
+      value={value12} 
+      maxLength="1" 
+      onChange={event => setValue12(event.target.value)}
+      />
+      </div>
+      </div>
+
+     </div> 
+     <div style={Item12}>
+      Frage 5
+     </div> 
+     <div style={Container1}>
+      <div style = {Item1}> 
+        <div>{fragen[4]}
+        <p />
+          <div style={{font: "italic"}}>{fragenZusatz[4]}</div>
+        </div>
+      </div>    
+      <div className="Item3"> 
+      <div style={{display: "flex",
+            alignItems: "center",
+            border: "solid silver 2px",
+            backgroundColor: "grey",
+            justifyContent: "space-around",
+            marginBottom: "3px"}}>
+      <div style={{display: "flex",
+            alignItems: "center",
+            margin: "5px",
+      }}>{antwortenFrage5[0]}
+      </div> 
+        <ObjectCalculator
+      value={value13} 
+      maxLength="1" 
+      onChange={event => setValue13(event.target.value)}
+      />
+      </div>
+            <div style={{display: "flex",
+            alignItems: "center",
+            border: "solid silver 2px",
+            backgroundColor: "grey",
+            justifyContent: "space-around",
+            marginBottom: "3px"}}>
+      <div style={{display: "flex",
+            alignItems: "center",
+            margin: "5px",
+      }}>{antwortenFrage5[1]}
+      </div>
+      <ObjectCalculator
+      value={value14} 
+      maxLength="1" 
+      onChange={event => setValue14(event.target.value)}
+      />
+      </div>
+            <div style={{display: "flex",
+            alignItems: "center",
+            border: "solid silver 2px",
+            backgroundColor: "grey",
+            justifyContent: "space-around",
+            marginBottom: "3px"}}>
+      <div style={{display: "flex",
+            alignItems: "center",
+            margin: "5px",
+      }}>{antwortenFrage5[2]}
+      </div>
+      <ObjectCalculator
+      value={value15} 
+      maxLength="1" 
+      onChange={event => setValue15(event.target.value)}
+      />
+      </div>
+      </div>
+     </div>   
+     <div style={Item12}>
+       Frage 6
+     </div>  
+     <div style={Container1}>
+      <div style = {Item1}> 
+        <div>{fragen[5]}
+        <p />
+          <div style={{font: "italic"}}>{fragenZusatz[5]}</div>
+          </div>
+      </div>    
+      <div className="Item3"> 
+      <div style={{display: "flex",
+            alignItems: "center",
+            border: "solid silver 2px",
+            backgroundColor: "grey",
+            justifyContent: "space-around",
+            marginBottom: "3px"}}>
+      <div style={{display: "flex",
+            alignItems: "center",
+            margin: "5px",
+      }}>{antwortenFrage6[0]}
+      </div> 
+        <ObjectCalculator
+      value={value16} 
+      maxLength="1" 
+      onChange={event => setValue16(event.target.value)}
+      />
+      </div>
+            <div style={{display: "flex",
+            alignItems: "center",
+            border: "solid silver 2px",
+            backgroundColor: "grey",
+            justifyContent: "space-around",
+            marginBottom: "3px"}}>
+      <div style={{display: "flex",
+            alignItems: "center",
+            margin: "5px",
+      }}>{antwortenFrage6[1]}
+      </div>
+      <ObjectCalculator
+      value={value17} 
+      maxLength="1" 
+      onChange={event => setValue17(event.target.value)}
+      />
+      </div>
+            <div style={{display: "flex",
+            alignItems: "center",
+            border: "solid silver 2px",
+            backgroundColor: "grey",
+            justifyContent: "space-around",
+            marginBottom: "3px"}}>
+      <div style={{display: "flex",
+            alignItems: "center",
+            margin: "5px",
+      }}>{antwortenFrage6[2]}
+      </div>
+      <ObjectCalculator
+      value={value18} 
+      maxLength="1" 
+      onChange={event => setValue18(event.target.value)}
+      />
+      </div>
+      </div>
+     </div> 
+     <div style={Item12}>
+      Frage 7
+     </div>
+     <div style={Container1}>
+      <div style = {Item1}> 
+        <div>{fragen[6]}
+        <p />
+          <div style={{font: "italic"}}>{fragenZusatz[6]}</div>
+          </div>
+      </div>    
+      <div className="Item3">  
+      <div style={{display: "flex",
+            alignItems: "center",
+            border: "solid silver 2px",
+            backgroundColor: "grey",
+            justifyContent: "space-around",
+            marginBottom: "3px"}}>
+      <div style={{display: "flex",
+            alignItems: "center",
+            margin: "5px",
+      }}>{antwortenFrage7[0]}
+      </div>
+        <ObjectCalculator
+      value={value19} 
+      maxLength="1" 
+      onChange={event => setValue19(event.target.value)}
+      />
+      </div>
+            <div style={{display: "flex",
+            alignItems: "center",
+            border: "solid silver 2px",
+            backgroundColor: "grey",
+            justifyContent: "space-around",
+            marginBottom: "3px"}}>
+      <div style={{display: "flex",
+            alignItems: "center",
+            margin: "5px",
+      }}>{antwortenFrage7[1]}
+      </div>
+      <ObjectCalculator
+      value={value20} 
+      maxLength="1" 
+      onChange={event => setValue20(event.target.value)}
+      />
+      </div>
+            <div style={{display: "flex",
+            alignItems: "center",
+            border: "solid silver 2px",
+            backgroundColor: "grey",
+            justifyContent: "space-around",
+            marginBottom: "3px"}}>
+      <div style={{display: "flex",
+            alignItems: "center",
+            margin: "5px",
+      }}>{antwortenFrage7[2]}
+      </div>
+      <ObjectCalculator
+      value={value21} 
+      maxLength="1" 
+      onChange={event => setValue21(event.target.value)}
+      />
+      </div>
+      </div>
+     </div> 
+     <div style={Item12}>
+     <p>Frage 8</p>
+     
+     {handlungsbeschreibung2}
+     </div>
+     <div style={Container1}>
+       <div style = {Item1}>
+        <div>{fragen[7]}
+        <p />
+          <div style={{font: "italic"}}>{fragenZusatz[7]}</div>
+        </div>
+      </div>  
+      <div style={Item2}>
+        <TableRowQ8to10>
+          <QuestionColumn>
+            {antwortenFrage8[0]}
+          </QuestionColumn>
+         <Checkbox checked={checked22} setChecked={setChecked22} inputfieldvalue={inputfieldvalue22} />
+        </TableRowQ8to10>
+        <TableRowQ8to10>
+          <QuestionColumn>
+            {antwortenFrage8[1]}
+          </QuestionColumn>
+         <Checkbox checked={checked23} setChecked={setChecked23} inputfieldvalue={inputfieldvalue23} />
+        </TableRowQ8to10>
+        <TableRowQ8to10>
+          <QuestionColumn>
+            {antwortenFrage8[2]}
+          </QuestionColumn>
+         <Checkbox checked={checked24} setChecked={setChecked24} inputfieldvalue={inputfieldvalue24} />
+        </TableRowQ8to10>
+        <TableRowQ8to10>
+          <QuestionColumn>
+            {antwortenFrage8[3]}
+          </QuestionColumn>
+         <Checkbox checked={checked25} setChecked={setChecked25} inputfieldvalue={inputfieldvalue25} />
+        </TableRowQ8to10>
+        <TableRowQ8to10>
+          <QuestionColumn>
+            {antwortenFrage8[4]}
+          </QuestionColumn>
+         <Checkbox checked={checked26} setChecked={setChecked26} inputfieldvalue={inputfieldvalue26} />
+        </TableRowQ8to10>
+        <TableRowQ8to10>
+          <QuestionColumn>
+            {antwortenFrage8[5]}
+          </QuestionColumn>
+         <Checkbox checked={checked27} setChecked={setChecked27} inputfieldvalue={inputfieldvalue27} />
+        </TableRowQ8to10>      
+    </div>
+    </div>
+    <p style={Item12}>Frage 9</p>
+     <div style={Container1}>
+       <div style = {Item1}>
+        <div>{fragen[8]}
+        <p />
+          <div style={{font: "italic"}}>{fragenZusatz[8]}</div>
+        </div>
+      </div>  
+      <div style={Item2}>
+        <TableRowQ8to10>
+          <QuestionColumn>
+            {antwortenFrage9[0]}
+          </QuestionColumn>
+         <Checkbox checked={checked28} setChecked={setChecked28} inputfieldvalue={inputfieldvalue28} />
+        </TableRowQ8to10> 
+        <TableRowQ8to10>
+          <QuestionColumn>
+            {antwortenFrage9[1]}
+          </QuestionColumn>
+         <Checkbox checked={checked29} setChecked={setChecked29} inputfieldvalue={inputfieldvalue29} />
+        </TableRowQ8to10> 
+        <TableRowQ8to10>
+          <QuestionColumn>
+            {antwortenFrage9[2]}
+          </QuestionColumn>
+         <Checkbox checked={checked30} setChecked={setChecked30} inputfieldvalue={inputfieldvalue30} />
+        </TableRowQ8to10> 
+        <TableRowQ8to10>
+          <QuestionColumn>
+            {antwortenFrage9[3]}
+          </QuestionColumn>
+         <Checkbox checked={checked31} setChecked={setChecked31} inputfieldvalue={inputfieldvalue31} />
+        </TableRowQ8to10> 
+        <TableRowQ8to10>
+          <QuestionColumn>
+            {antwortenFrage9[4]}
+          </QuestionColumn>
+         <Checkbox checked={checked32} setChecked={setChecked32} inputfieldvalue={inputfieldvalue32} />
+        </TableRowQ8to10> 
+        <TableRowQ8to10>
+          <QuestionColumn>
+            {antwortenFrage9[5]}
+          </QuestionColumn>
+         <Checkbox checked={checked33} setChecked={setChecked33} inputfieldvalue={inputfieldvalue33} />
+        </TableRowQ8to10> 
+      </div>
+    </div>
+  
+    <p style={Item12}>Frage 10</p>
      <div style={Container1}>
        <div style = {Item1}>
         <div>{fragen[9]}
