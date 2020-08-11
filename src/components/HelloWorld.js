@@ -519,7 +519,7 @@ font-weight: bold
         <p/>
         Füllst Du die Felder nicht wie beschrieben aus, wird dich ein Text am Ende des Tests darauf hinweisen. Dieser wird nicht nett sein!
         <p/>
-        Jede weitere Einleitung kommt durch Femki ♥
+        Jede weitere Einleitung kommt durch Femki <span style={{color:"red"}}>♥</span>
       </h3>
     </div>
     <div style={Item12}>
@@ -558,7 +558,6 @@ font-weight: bold
         defaultValue=""
     onChange={event => setValue1(event.target.value)}/>
     <br/>
-    {wert}
     <br/>
       </div>
       <div style={{display: "flex",
@@ -1202,7 +1201,6 @@ font-weight: bold
         defaultValue=""
     onChange={event => setValue1(event.target.value)}/>
     <br/>
-    {wert}
     <br/>
       </div>
       <div style={{display: "flex",
