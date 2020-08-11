@@ -500,10 +500,10 @@ font-weight: bold
 
 
 
-  if ( wert && wertzwei && IndexOfInputfieldstring3 && IndexOfInputfieldstring4 && IndexOfInputfieldstring5 && IndexOfInputfieldstring6 && IndexOfInputfieldstring7 >= 0 && renderchart8 === true && renderchart9 &&renderchart10 === true) {
+  if ( wert && wertzwei && IndexOfInputfieldstring3 && IndexOfInputfieldstring4 && IndexOfInputfieldstring5 && IndexOfInputfieldstring6 && IndexOfInputfieldstring7 >= 0 && renderchart8 === true && renderchart9 === true &&renderchart10 === true) {
   return (
-  <>
-  <p/>
+    <>
+    <p/>
     <h1><Headline textcolor="yellowgreen">STRU</Headline><Headline textcolor="tomato">KTOG</Headline><Headline textcolor="lightblue">RAMM</Headline></h1>
     <p/>
     <div style={Item11}>
@@ -555,10 +555,11 @@ font-weight: bold
       }}>{antwortenFrage1[0]}
       </div>
         <ObjectCalculator
-      value={value1} 
-      maxLength="1" 
-      onChange={event => setValue1(event.target.value)}
-      />
+        defaultValue=""
+    onChange={event => setValue1(event.target.value)}/>
+    <br/>
+    {wert}
+    <br/>
       </div>
       <div style={{display: "flex",
             alignItems: "center",
@@ -572,8 +573,7 @@ font-weight: bold
       }}>{antwortenFrage1[1]}
       </div>
       <ObjectCalculator
-      value={value2} 
-      maxLength="1" 
+      defaultValue=""
       onChange={event => setValue2(event.target.value)}
       />
       </div>
@@ -587,16 +587,17 @@ font-weight: bold
             alignItems: "center",
             margin: "5px",
       }}>{antwortenFrage1[2]}
+       
       </div>
       <ObjectCalculator
-      value={value3} 
-      maxLength="1" 
+      defaultValue=""
       onChange={event => setValue3(event.target.value)}
       />
       </div>
       </div>
     </div>  
     <p />
+    
     <div style={Item12}>
   Frage 2
   </div>
@@ -1131,7 +1132,6 @@ font-weight: bold
         </TableRowQ8to10> 
       </div> 
      </div> 
-  
   <p style={roteErgebnisse}>{ergebnisRot} Das ist die Summer der Roten
   Ergebnisse</p>
   <p style={grueneErgebnisse}>{ergebnisGruen} Das ist die Summer der grünen
@@ -1199,10 +1199,11 @@ font-weight: bold
       }}>{antwortenFrage1[0]}
       </div>
         <ObjectCalculator
-      value={value1} 
-      maxLength="1" 
-      onChange={event => setValue1(event.target.value)}
-      />
+        defaultValue=""
+    onChange={event => setValue1(event.target.value)}/>
+    <br/>
+    {wert}
+    <br/>
       </div>
       <div style={{display: "flex",
             alignItems: "center",
@@ -1216,8 +1217,7 @@ font-weight: bold
       }}>{antwortenFrage1[1]}
       </div>
       <ObjectCalculator
-      value={value2} 
-      maxLength="1" 
+      defaultValue=""
       onChange={event => setValue2(event.target.value)}
       />
       </div>
@@ -1231,16 +1231,17 @@ font-weight: bold
             alignItems: "center",
             margin: "5px",
       }}>{antwortenFrage1[2]}
+       
       </div>
       <ObjectCalculator
-      value={value3} 
-      maxLength="1" 
+      defaultValue=""
       onChange={event => setValue3(event.target.value)}
       />
       </div>
       </div>
     </div>  
     <p />
+    
     <div style={Item12}>
   Frage 2
   </div>
@@ -1787,3 +1788,23 @@ font-weight: bold
   }
   
 
+/*
+const [value1, setValue1] = React.useState("");
+
+
+
+return (
+  <>
+    <select defaultValue=""
+    onChange={event => setValue1(event.target.value)}>
+      <option value=""></option>
+      <option value="0">0</option>
+      <option value="+">+</option>
+      <option value="-">-</option>
+    </select>
+    <br/>
+    <br/>
+    {value1}
+  </>
+)
+*/

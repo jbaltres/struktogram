@@ -10,13 +10,19 @@ return (
             alignitems:"center",
             justifycontent: "center",
             padding: "20px 0px"}}>
-       <input style={{width: "30px",
-                  height: "30px",
-                  fontSize: "1.5em",
-                  margin: "5px",
-                  textAlign: "center"}} {...props} />
+       <select style={{
+                  fontSize: "1.5em"
+       }} {...props}>
+      <option value=""></option>
+      <option value="0">0</option>
+      <option value="+">+</option>
+      <option value="-">-</option>
+    </select>
+    <br/>
+    <br/>
       </div> 
    
     </>
   );
 }
+
