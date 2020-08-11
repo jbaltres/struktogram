@@ -1152,7 +1152,7 @@ font-weight: bold
     <div style={Item11}>
       Das Struktogramm dient zur Persönlichkeitsanalyse
       <p />
-      Um den Test erfolgreich durchzuführen, müssen folgende Regeln eingehalten werdne. 
+      Um den Test erfolgreich durchzuführen, müssen folgende Regeln eingehalten werden. 
       <ol>
         <li>Lies die Aufgabe</li>
         <li>Lies die Beschreibung zur Durchführung</li>
@@ -1162,7 +1162,7 @@ font-weight: bold
         <p/>
         Füllst Du die Felder nicht wie beschrieben aus, wird dich ein Text am Ende des Tests darauf hinweisen. Dieser wird nicht nett sein!
         <p/>
-        Jede weitere Einleitung kommt durch Femki ♥
+        Jede weitere Einleitung kommt durch Femki <span style={{color:"red"}}>♥</span>
       </h3>
     </div>
     <div style={Item12}>
