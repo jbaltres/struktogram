@@ -1781,6 +1781,8 @@ font-weight: bold
     <h2 style={Item2}>Irgendwo sind falsche Werte du Dummkopf!</h2>
     <p />
     <h3 style={Item2}>HALTE DICH AN DIE ANGABEN!!!</h3>
+    <p />
+    Credits @ webdevelukas && pdxphilippmac && j-toscani
     </>
     );
   }
