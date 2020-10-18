@@ -468,6 +468,10 @@ const Item2 = {
 
   }
 
+  const Credits = {
+    color: "white",
+    fontSize: "7px"
+  }
 
 
 const QuestionColumn = styled.div`
@@ -1782,7 +1786,7 @@ font-weight: bold
     <p />
     <h3 style={Item2}>HALTE DICH AN DIE ANGABEN!!!</h3>
     <p />
-    Credits @ webdevelukas && pdxphilippmac && j-toscani
+    <span style={Credits}> Credits @ webdevelukas && pdxphilippmac && j-toscani </span>
     </>
     );
   }
