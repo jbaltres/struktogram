@@ -508,7 +508,7 @@ font-weight: bold
   return (
     <>
     <p/>
-    <h1><Headline textcolor="yellowgreen">STRU</Headline><Headline textcolor="tomato">KTOG</Headline><Headline textcolor="lightblue">RAMM</Headline></h1>
+    <h1><Headline textcolor="yellowgreen">STRU</Headline><Headline textcolor="tomato">CTOG</Headline><Headline textcolor="rgb(0, 159, 225)">RAM®</Headline></h1>
     <p/>
     <div style={Item11}>
       Das Struktogramm dient zur Persönlichkeitsanalyse
@@ -1151,7 +1151,7 @@ font-weight: bold
   return (
     <>
     <p/>
-    <h1><Headline textcolor="yellowgreen">STRU</Headline><Headline textcolor="tomato">KTOG</Headline><Headline textcolor="lightblue">RAMM</Headline></h1>
+    <h1><Headline textcolor="yellowgreen">STRU</Headline><Headline textcolor="tomato">CTOG</Headline><Headline textcolor="rgb(0, 159, 225)">RAM®</Headline></h1>
     <p/>
     <div style={Item11}>
       Das Struktogramm dient zur Persönlichkeitsanalyse
