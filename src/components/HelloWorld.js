@@ -511,13 +511,13 @@ font-weight: bold
     <h1><Headline textcolor="yellowgreen">STRU</Headline><Headline textcolor="tomato">CTOG</Headline><Headline textcolor="rgb(0, 159, 225)">RAM®</Headline></h1>
     <p/>
     <div style={Item11}>
-      Das Struktogramm dient zur Persönlichkeitsanalyse
+      Das Structogram dient zur Persönlichkeitsanalyse.
       <p />
-      Um den Test erfolgreich durchzuführen, müssen folgende Regeln eingehalten werdne. 
+      Um den Test erfolgreich durchzuführen, müssen folgende Regeln eingehalten werden: 
       <ol>
         <li>Lies die Aufgabe</li>
         <li>Lies die Beschreibung zur Durchführung</li>
-        <li>Fülle die Felder laut Beschreibung aus</li>
+        <li>Fülle die Felder wie in der Beschreibung angegeben aus</li>
       </ol>
       <h3>Achtung!!!
         <p/>
@@ -1135,16 +1135,17 @@ font-weight: bold
         </TableRowQ8to10> 
       </div> 
      </div> 
-  <p style={roteErgebnisse}>{ergebnisRot} Das ist die Summer der Roten
+  <p style={roteErgebnisse}>{ergebnisRot} Das ist die Summer der roten
   Ergebnisse</p>
   <p style={grueneErgebnisse}>{ergebnisGruen} Das ist die Summer der grünen
   Ergebnisse</p>
   <br/>
   <br/>
-  <h3 style={Item12}>Dies ist dein persönliches Struktogram Ergebnis</h3>
+  <h3 style={Item12}>Dies ist Dein persönliches Structogram Ergebnis</h3>
   <PieChart iVR={ergebnisRot} iGR={ergebnisGruen}/>
   <br/>
   <br/>
+  <span style={Credits}> Credits @ webdevelukas && pdxphilippmac && j-toscani </span>
   </>
   );
   }
@@ -1154,9 +1155,9 @@ font-weight: bold
     <h1><Headline textcolor="yellowgreen">STRU</Headline><Headline textcolor="tomato">CTOG</Headline><Headline textcolor="rgb(0, 159, 225)">RAM®</Headline></h1>
     <p/>
     <div style={Item11}>
-      Das Struktogramm dient zur Persönlichkeitsanalyse
+      Das Structogram dient zur Persönlichkeitsanalyse.
       <p />
-      Um den Test erfolgreich durchzuführen, müssen folgende Regeln eingehalten werden. 
+      Um den Test erfolgreich durchzuführen, müssen folgende Regeln eingehalten werden: 
       <ol>
         <li>Lies die Aufgabe</li>
         <li>Lies die Beschreibung zur Durchführung</li>
@@ -1778,7 +1779,7 @@ font-weight: bold
         </TableRowQ8to10> 
       </div> 
      </div> 
-    <p style={roteErgebnisse}>{ergebnisRot} Das ist die Summer der Roten
+    <p style={roteErgebnisse}>{ergebnisRot} Das ist die Summer der roten
     Ergebnisse</p>
     <p style={grueneErgebnisse}>{ergebnisGruen} Das ist die Summer der grünen
     Ergebnisse</p>
